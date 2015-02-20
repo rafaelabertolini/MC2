@@ -51,10 +51,10 @@
                                                     <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guJ-Ca-5as">
                                                         <rect key="frame" x="13" y="0.0" width="525" height="71"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ProblemaBloqueado" translatesAutoresizingMaskIntoConstraints="NO" id="krr-WV-Fgo">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProblemaBloqueado" translatesAutoresizingMaskIntoConstraints="NO" id="krr-WV-Fgo">
                                                                 <rect key="frame" x="8" y="4" width="62" height="62"/>
                                                             </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="x7F-dg-Zqw">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="x7F-dg-Zqw">
                                                                 <rect key="frame" x="84" y="0.0" width="431" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Qual é o problema?">
@@ -676,6 +676,21 @@
                                             <constraint firstItem="R8u-XF-Be3" firstAttribute="leading" secondItem="lfL-Wz-cIa" secondAttribute="leading" constant="16" id="exo-Aw-fTs"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3T-4e-S3q">
+                                        <rect key="frame" x="0.0" y="710" width="600" height="54"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.41176470590000003" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="B3B-c4-dZH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="tintColor" red="0.55686274509803924" green="0.76078431372549016" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Salvar!">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="salvarButtonAction:" destination="KQ5-n0-ajb" eventType="touchUpInside" id="5uu-WG-PZV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -689,7 +704,15 @@
                                     <constraint firstItem="G3n-99-Xst" firstAttribute="top" secondItem="j9R-yA-qxn" secondAttribute="bottom" constant="10" id="gcJ-B6-7qE"/>
                                     <constraint firstItem="q0f-SV-x5i" firstAttribute="leading" secondItem="pok-D3-203" secondAttribute="leading" id="gmS-LK-gph"/>
                                     <constraint firstItem="G3n-99-Xst" firstAttribute="leading" secondItem="j9R-yA-qxn" secondAttribute="leading" id="h2c-gZ-ZDT"/>
+                                    <constraint firstItem="X3T-4e-S3q" firstAttribute="top" secondItem="lfL-Wz-cIa" secondAttribute="bottom" constant="7" id="lM8-Z3-jGl"/>
+                                    <constraint firstAttribute="bottom" secondItem="X3T-4e-S3q" secondAttribute="bottom" constant="20" id="oKU-Ih-6wr"/>
+                                    <constraint firstAttribute="centerX" secondItem="X3T-4e-S3q" secondAttribute="centerX" id="s7I-5h-fbM"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SGt-DG-YHB"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -702,6 +725,7 @@
                             <constraint firstAttribute="trailing" secondItem="pok-D3-203" secondAttribute="trailing" id="UtS-zg-CGL"/>
                             <constraint firstItem="pok-D3-203" firstAttribute="top" secondItem="pE1-iO-Gbn" secondAttribute="top" id="bq1-C9-kuu"/>
                             <constraint firstAttribute="width" secondItem="G3n-99-Xst" secondAttribute="width" id="hPE-Nh-dAc"/>
+                            <constraint firstItem="X3T-4e-S3q" firstAttribute="width" secondItem="pE1-iO-Gbn" secondAttribute="width" id="v7w-o8-5B1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -719,6 +743,7 @@
                         <outlet property="actvL6" destination="vzR-vB-C38" id="Yb9-z4-Pfs"/>
                         <outlet property="introLabel" destination="0ci-GL-cYu" id="rEB-dv-uon"/>
                         <outlet property="mainObj" destination="j9R-yA-qxn" id="Jva-Rl-c5S"/>
+                        <outlet property="salvarButton" destination="X3T-4e-S3q" id="Rd4-XQ-EnR"/>
                         <outlet property="secondIntroLabel" destination="R8u-XF-Be3" id="97F-G5-4Dm"/>
                         <outlet property="sit1" destination="33A-eF-8vq" id="vw0-jm-qT5"/>
                         <outlet property="sit10" destination="F8t-K7-div" id="zap-wQ-8s8"/>

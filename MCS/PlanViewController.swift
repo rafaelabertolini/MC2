@@ -69,6 +69,13 @@ class PlanViewController: UIViewController {
     @IBOutlet weak var sit10: UIButton!
     @IBOutlet weak var sitL10: UILabel!
     
+    @IBOutlet weak var salvarButton: UIButton!
+    
+    @IBAction func salvarButtonAction(sender: UIButton) {
+        self.savePlan()
+        self.selectionsAndAdds()
+    }
+    
     
     var activities = [NSManagedObject]()
     var alternatives = [NSManagedObject]()
@@ -134,6 +141,7 @@ class PlanViewController: UIViewController {
     @IBAction func pressSave(sender: UIButton){
         
         self.savePlan()
+        self.selectionsAndAdds()
         
     
     }

@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+
+@objc(ActvAndSit)
+
 class ActvAndSit: NSManagedObject {
    
     @NSManaged var name: String

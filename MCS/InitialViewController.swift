@@ -74,22 +74,20 @@ class InitialViewController: UIViewController {
         } else {
             pressionarView()
         }
-        
-        //
     }
     
     
     @IBAction func planosAction(sender: UIButton) {
+        
         if(testarDados("Pro") || testarDados("Con")){
-            performSegueWithIdentifier("planoSegue", sender: self)
-        } else {
+           performSegueWithIdentifier("planoSegue", sender: self)
+            } else {
             pressionarView()
         }
-        
     }
     
     @IBAction func metasAction(sender: UIButton) {
-        if(testarDados("Plan")){
+         if(testarDados("Plan")){
             performSegueWithIdentifier("metasSegue", sender: self)
         } else {
             pressionarView()

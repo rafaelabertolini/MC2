@@ -9,6 +9,8 @@
 import Foundation
 import CoreData
 
+@objc(Plan)
+
 class Plan: NSManagedObject {
 
     @NSManaged var mainObj: String
