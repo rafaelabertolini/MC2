@@ -13,12 +13,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let tintColor         = UIColor(red: 237/255, green: 192/255, blue: 61/255, alpha: 1) //
+    let selectedTintColor = UIColor(red: 131/255, green: 186/255, blue: 185/255, alpha: 1) //
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
-        
+        UITabBar.appearance().tintColor = selectedTintColor
         
         var tabBarAppearance = UITabBar.appearance()
         
