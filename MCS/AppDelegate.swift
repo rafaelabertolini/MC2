@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        
+        
+        
+        // Tab Bar
         UITabBar.appearance().tintColor = selectedTintColor
-        
         var tabBarAppearance = UITabBar.appearance()
-        
         tabBarAppearance.barTintColor = UIColor(red: 50/255, green: 105/255, blue: 102/255, alpha: 1.0)
         tabBarAppearance.translucent = false
         
