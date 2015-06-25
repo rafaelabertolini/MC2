@@ -24,7 +24,7 @@ class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.viewWithTag(01)?.backgroundColor = UIColor(red: 52, green: 105, blue: 102, alpha: 1)
+        //self.view.viewWithTag(01)?.backgroundColor = UIColor(red: 52, green: 105, blue: 102, alpha: 1)
         contentView.layer.cornerRadius = 35
         problemaView.layer.cornerRadius = 35
         prosContrasView.layer.cornerRadius = 35

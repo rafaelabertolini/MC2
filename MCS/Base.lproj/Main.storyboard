@@ -53,8 +53,8 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Problema" translatesAutoresizingMaskIntoConstraints="NO" id="krr-WV-Fgo">
                                                                 <rect key="frame" x="8" y="4" width="62" height="62"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o problema?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-QZ-Csh">
-                                                                <rect key="frame" x="84" y="21" width="189.5" height="27.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o problema?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-QZ-Csh">
+                                                                <rect key="frame" x="84" y="0.0" width="189.5" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <color key="textColor" red="0.10980392160000001" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -66,6 +66,7 @@
                                                             <constraint firstAttribute="centerY" secondItem="LMa-QZ-Csh" secondAttribute="centerY" id="HZ2-nm-ADl"/>
                                                             <constraint firstAttribute="centerY" secondItem="krr-WV-Fgo" secondAttribute="centerY" id="K0e-eV-9Ru"/>
                                                             <constraint firstItem="LMa-QZ-Csh" firstAttribute="leading" secondItem="krr-WV-Fgo" secondAttribute="trailing" constant="14" id="uDy-ab-ars"/>
+                                                            <constraint firstAttribute="height" secondItem="LMa-QZ-Csh" secondAttribute="height" id="yBW-7H-9YJ"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -88,8 +89,8 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProsContras" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-r3-eA3">
                                                                 <rect key="frame" x="15" y="3" width="63" height="63"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prós e Contras" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsA-zS-7qv">
-                                                                <rect key="frame" x="92" y="21" width="143" height="27.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prós e Contras" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsA-zS-7qv">
+                                                                <rect key="frame" x="92" y="0.0" width="143" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <color key="textColor" red="0.10980392160000001" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -97,6 +98,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" secondItem="UsA-zS-7qv" secondAttribute="height" id="8bd-8m-uOV"/>
                                                             <constraint firstItem="gyO-r3-eA3" firstAttribute="leading" secondItem="Md6-5P-CoA" secondAttribute="leading" constant="15" id="JZB-RT-qXU"/>
                                                             <constraint firstItem="UsA-zS-7qv" firstAttribute="leading" secondItem="gyO-r3-eA3" secondAttribute="trailing" constant="14" id="Kfz-Ve-JVF"/>
                                                             <constraint firstAttribute="centerY" secondItem="gyO-r3-eA3" secondAttribute="centerY" constant="1" id="Ngd-lu-oKf"/>
@@ -123,8 +125,8 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plano" translatesAutoresizingMaskIntoConstraints="NO" id="3V0-T9-uTG">
                                                                 <rect key="frame" x="9" y="3" width="63" height="64"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu plano" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hQ-Gk-uBc">
-                                                                <rect key="frame" x="86" y="21" width="97.5" height="27.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu plano" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hQ-Gk-uBc">
+                                                                <rect key="frame" x="86" y="0.0" width="97.5" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <color key="textColor" red="0.10980392160000001" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -135,6 +137,7 @@
                                                             <constraint firstAttribute="centerY" secondItem="5hQ-Gk-uBc" secondAttribute="centerY" id="T4M-vs-Zpu"/>
                                                             <constraint firstAttribute="centerY" secondItem="3V0-T9-uTG" secondAttribute="centerY" id="rNk-bR-qyu"/>
                                                             <constraint firstItem="3V0-T9-uTG" firstAttribute="leading" secondItem="pvi-UU-25a" secondAttribute="leading" constant="9" id="sF7-L4-697"/>
+                                                            <constraint firstAttribute="height" secondItem="5hQ-Gk-uBc" secondAttribute="height" id="tl8-8M-R63"/>
                                                             <constraint firstItem="5hQ-Gk-uBc" firstAttribute="leading" secondItem="3V0-T9-uTG" secondAttribute="trailing" constant="14" id="vmO-yl-g7m"/>
                                                         </constraints>
                                                     </view>
@@ -158,8 +161,8 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meta" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-3d-8ym">
                                                                 <rect key="frame" x="15" y="4" width="62" height="62"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar metas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icG-je-0D1">
-                                                                <rect key="frame" x="91" y="21.5" width="110" height="27.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar metas" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icG-je-0D1">
+                                                                <rect key="frame" x="91" y="0.0" width="110" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <color key="textColor" red="0.10980392160000001" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -167,6 +170,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" secondItem="icG-je-0D1" secondAttribute="height" id="G6N-4y-FRw"/>
                                                             <constraint firstItem="icG-je-0D1" firstAttribute="leading" secondItem="xeS-3d-8ym" secondAttribute="trailing" constant="14" id="Gyt-6E-SD2"/>
                                                             <constraint firstAttribute="height" constant="71" id="MgU-UX-8f2"/>
                                                             <constraint firstAttribute="centerY" secondItem="icG-je-0D1" secondAttribute="centerY" id="UCz-rU-P4A"/>
@@ -372,5 +376,5 @@
         <image name="ProsContras" width="63" height="63"/>
         <image name="Rectangle 1" width="600" height="600"/>
     </resources>
-    <color key="tintColor" red="0.15294117647058825" green="0.3411764705882353" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

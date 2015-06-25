@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var tabBarAppearance = UITabBar.appearance()
         
-        tabBarAppearance.barTintColor = UIColor(red: 50/255, green: 105/255, blue: 102/255, alpha: 1.0)
+        tabBarAppearance.barTintColor = UIColor(red: 38/255, green: 87/255, blue: 83/255, alpha: 1.0)
         tabBarAppearance.translucent = false
         
         
