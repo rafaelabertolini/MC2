@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="fSD-J0-6hr">
             <objects>
-                <tabBarController id="5W2-os-jjW" sceneMemberID="viewController">
+                <tabBarController id="5W2-os-jjW" customClass="CustomTabBarController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xO9-el-gI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="-631" y="859"/>
         </scene>
-        <!--Item-->
+        <!--Reflexões-->
         <scene sceneID="9dG-ib-bOu">
             <objects>
                 <viewController id="tP3-cu-GMg" sceneMemberID="viewController">
@@ -81,14 +81,14 @@
                             <constraint firstItem="Uws-QV-hdW" firstAttribute="bottom" secondItem="MQ7-OA-a0i" secondAttribute="bottomMargin" id="oyX-VU-RTM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Lightbulb_1_" id="ljR-Tc-pag"/>
+                    <tabBarItem key="tabBarItem" title="Reflexões" image="Lightbulb_1_" id="ljR-Tc-pag"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5R-vN-6OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31" y="859"/>
         </scene>
-        <!--Item-->
+        <!--Recursos-->
         <scene sceneID="eRk-M3-MY7">
             <objects>
                 <viewController id="dPJ-ta-cPb" sceneMemberID="viewController">
@@ -112,14 +112,14 @@
                             <constraint firstItem="mlk-Li-QYh" firstAttribute="leading" secondItem="pha-uL-PP4" secondAttribute="leadingMargin" constant="-16" id="u2l-MN-R5M"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Info" id="dr1-7J-Rv2"/>
+                    <tabBarItem key="tabBarItem" title="Recursos" image="Info" id="dr1-7J-Rv2"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLg-3l-3Rh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679" y="859"/>
         </scene>
-        <!--Item-->
+        <!--Configurações-->
         <scene sceneID="Yg6-TX-k84">
             <objects>
                 <viewController id="iTn-Go-5SI" sceneMemberID="viewController">
@@ -143,7 +143,7 @@
                             <constraint firstItem="Jub-GR-VzD" firstAttribute="top" secondItem="mdp-Gu-FD2" secondAttribute="topMargin" id="nAr-iq-WiJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Gear_2_" id="5uC-On-xbe"/>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="Gear_2_" id="5uC-On-xbe"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOn-DA-7E3" userLabel="First Responder" sceneMemberID="firstResponder"/>
