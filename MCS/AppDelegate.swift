@@ -18,13 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         
-        
-        
         var tabBarAppearance = UITabBar.appearance()
         
         tabBarAppearance.barTintColor = UIColor(red: 50/255, green: 105/255, blue: 102/255, alpha: 1.0)
         tabBarAppearance.translucent = false
         
+        
+        let tabBarController = self.window!.rootViewController as! UITabBarController
+        let tabBar = tabBarController.tabBar as UITabBar
+        
+        // I prefer to use 0 based labels since the array is 0 based
+        let tabBarItem0 = tabBar.items![0] as! UITabBarItem
+        let tabBarItem1 = tabBar.items![1] as! UITabBarItem
+        let tabBarItem2 = tabBar.items![2] as! UITabBarItem
+        let tabBarItem3 = tabBar.items![3] as! UITabBarItem
+        
+        
+        // Using Assets with the various sizes loaded (1x, 2x, 3x) is better.
+        tabBarItem0.selectedImage = UIImage(named: "815-car-selected")
+        tabBarItem1.selectedImage = UIImage(named: "742-wrench-selected")
+        tabBarItem2.selectedImage = UIImage(named: "710-folder-selected")
+        tabBarItem3.selectedImage = UIImage(named: "724-info-selected")
+
         
         return true
     }
