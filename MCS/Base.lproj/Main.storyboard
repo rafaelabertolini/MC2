@@ -265,16 +265,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="Uws-QV-hdW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-ku-5yQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uws-QV-hdW" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leadingMargin" constant="-16" id="C9g-qI-dSH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Uws-QV-hdW" secondAttribute="trailing" constant="-16" id="Val-55-nNi"/>
-                            <constraint firstItem="Uws-QV-hdW" firstAttribute="top" secondItem="MQ7-OA-a0i" secondAttribute="topMargin" id="Yiw-rp-0lE"/>
-                            <constraint firstItem="Uws-QV-hdW" firstAttribute="bottom" secondItem="MQ7-OA-a0i" secondAttribute="bottomMargin" id="oyX-VU-RTM"/>
+                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="top" secondItem="MQ7-OA-a0i" secondAttribute="topMargin" id="3eK-mr-Gc6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZJj-ku-5yQ" secondAttribute="trailing" constant="-16" id="6kG-ed-f6U"/>
+                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leadingMargin" constant="-16" id="G5j-oD-lOp"/>
+                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="bottom" secondItem="MQ7-OA-a0i" secondAttribute="bottomMargin" id="oPO-dB-bhG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reflexões" image="Lightbulb_1_" id="ljR-Tc-pag"/>
@@ -296,16 +297,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="mlk-Li-QYh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ea-FX-oEU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mlk-Li-QYh" firstAttribute="bottom" secondItem="pha-uL-PP4" secondAttribute="bottomMargin" id="cJX-7C-uXj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mlk-Li-QYh" secondAttribute="trailing" constant="-16" id="fmr-Ni-iak"/>
-                            <constraint firstItem="mlk-Li-QYh" firstAttribute="top" secondItem="pha-uL-PP4" secondAttribute="topMargin" id="qYr-qP-BHa"/>
-                            <constraint firstItem="mlk-Li-QYh" firstAttribute="leading" secondItem="pha-uL-PP4" secondAttribute="leadingMargin" constant="-16" id="u2l-MN-R5M"/>
+                            <constraint firstItem="1ea-FX-oEU" firstAttribute="leading" secondItem="pha-uL-PP4" secondAttribute="leadingMargin" constant="-16" id="5cK-qA-fo0"/>
+                            <constraint firstItem="1ea-FX-oEU" firstAttribute="bottom" secondItem="pha-uL-PP4" secondAttribute="bottomMargin" id="MYJ-gH-aNE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ea-FX-oEU" secondAttribute="trailing" constant="-16" id="SRY-4h-FAU"/>
+                            <constraint firstItem="1ea-FX-oEU" firstAttribute="top" secondItem="pha-uL-PP4" secondAttribute="topMargin" id="aim-oJ-HK6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recursos" image="Info" id="dr1-7J-Rv2"/>
@@ -327,16 +329,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="Jub-GR-VzD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrj-b7-6ht">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jub-GR-VzD" firstAttribute="bottom" secondItem="mdp-Gu-FD2" secondAttribute="bottomMargin" id="Pyh-qs-pOI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jub-GR-VzD" secondAttribute="trailing" constant="-16" id="QOS-4Z-VF6"/>
-                            <constraint firstItem="Jub-GR-VzD" firstAttribute="leading" secondItem="mdp-Gu-FD2" secondAttribute="leadingMargin" constant="-16" id="fXT-sT-59O"/>
-                            <constraint firstItem="Jub-GR-VzD" firstAttribute="top" secondItem="mdp-Gu-FD2" secondAttribute="topMargin" id="nAr-iq-WiJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yrj-b7-6ht" secondAttribute="trailing" constant="-16" id="7JI-T6-MeC"/>
+                            <constraint firstItem="Yrj-b7-6ht" firstAttribute="top" secondItem="mdp-Gu-FD2" secondAttribute="topMargin" id="RBx-KF-pwj"/>
+                            <constraint firstItem="Yrj-b7-6ht" firstAttribute="bottom" secondItem="mdp-Gu-FD2" secondAttribute="bottomMargin" id="fv1-tG-Tgj"/>
+                            <constraint firstItem="Yrj-b7-6ht" firstAttribute="leading" secondItem="mdp-Gu-FD2" secondAttribute="leadingMargin" constant="-16" id="hPB-jl-bFp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="Gear_2_" id="5uC-On-xbe"/>
@@ -374,7 +377,6 @@
         <image name="Plano" width="63" height="64"/>
         <image name="Problema" width="62" height="62"/>
         <image name="ProsContras" width="63" height="63"/>
-        <image name="Rectangle 1" width="600" height="600"/>
     </resources>
     <color key="tintColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
