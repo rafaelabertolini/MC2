@@ -26,28 +26,29 @@
             </objects>
             <point key="canvasLocation" x="355" y="111"/>
         </scene>
-        <!--Item-->
+        <!--Inicio-->
         <scene sceneID="dXI-kL-94S">
             <objects>
-                <viewController id="ziz-aQ-Xsk" sceneMemberID="viewController">
+                <viewController title="Inicio" id="ziz-aQ-Xsk" customClass="InitialViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PBz-hr-bsc"/>
                         <viewControllerLayoutGuide type="bottom" id="dZO-CT-dQj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oAI-fU-1mn">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="oAI-fU-1mn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-ls-69O">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esq-l9-WRl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.1529411765" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WHH-ls-69O" firstAttribute="bottom" secondItem="oAI-fU-1mn" secondAttribute="bottomMargin" id="LkR-6F-snZ"/>
-                            <constraint firstItem="WHH-ls-69O" firstAttribute="top" secondItem="oAI-fU-1mn" secondAttribute="topMargin" id="ku2-yi-mEl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WHH-ls-69O" secondAttribute="trailing" constant="-16" id="mCU-za-4p1"/>
-                            <constraint firstItem="WHH-ls-69O" firstAttribute="leading" secondItem="oAI-fU-1mn" secondAttribute="leadingMargin" constant="-16" id="y8H-nH-pEM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="esq-l9-WRl" secondAttribute="trailing" constant="-16" id="7Ds-Bc-kxa"/>
+                            <constraint firstItem="esq-l9-WRl" firstAttribute="top" secondItem="oAI-fU-1mn" secondAttribute="topMargin" id="IAn-aH-SsL"/>
+                            <constraint firstItem="esq-l9-WRl" firstAttribute="bottom" secondItem="oAI-fU-1mn" secondAttribute="bottomMargin" id="i3X-qg-ecp"/>
+                            <constraint firstItem="esq-l9-WRl" firstAttribute="leading" secondItem="oAI-fU-1mn" secondAttribute="leadingMargin" constant="-16" id="kX4-bg-Giw"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="Home_2_" id="tkF-1o-Pl2"/>
@@ -175,4 +176,5 @@
         <image name="Lightbulb_1_" width="22" height="32"/>
         <image name="Rectangle 1" width="600" height="600"/>
     </resources>
+    <color key="tintColor" red="0.15294117647058825" green="0.3411764705882353" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
 </document>
