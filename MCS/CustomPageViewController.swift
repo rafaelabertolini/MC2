@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomPageViewController: UIViewController,BWWalkthroughPage {
+class CustomPageViewController: UIViewController, BWWalkthroughPage {
     
     @IBOutlet var imageView:UIImageView?
     @IBOutlet var titleLabel:UILabel?
