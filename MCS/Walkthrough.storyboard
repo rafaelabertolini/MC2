@@ -100,14 +100,14 @@
                                     <constraint firstAttribute="height" constant="205" id="1gB-yl-9eT"/>
                                     <constraint firstAttribute="width" constant="324" id="uk0-Ku-sD6"/>
                                 </constraints>
-                                <string key="text">Muitas vezes, as críticas da família e dos amigos são tão intensas e a culpa tão grande, que toda a energia é usada para ficar na defensiva. O meu desejo, FULANO, é que você tenha aqui um espaço unicamente seu. Onde apenas você terá acesso às informações que quiser relatar.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Muitas vezes, as críticas da família e dos amigos são tão intensas que toda a energia é usada para ficar na defensiva. O meu desejo, FULANO, é que você tenha aqui um espaço onde apenas você terá acesso às informações que quiser relatar.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-LP-oHS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Um espaço unicamente seu." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-LP-oHS">
                                 <rect key="frame" x="276" y="162" width="48.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -154,8 +154,9 @@
                                             <constraint firstAttribute="width" constant="346" id="7AH-Q9-Mnj"/>
                                             <constraint firstAttribute="height" constant="257" id="uHB-dF-sww"/>
                                         </constraints>
-                                        <string key="text">Aqui, vou apenas indicar um roteiro de reflexões para que você realize individualmente e te disponibilizar um espaço para que você crie suas próprias metas e assim possas vencê-las em seu próprio tempo, sem pressa alguma em completar as atividades aqui propostas. A única coisa que eu gostaria de te pedir é que você reflita bem ao escrever algo, fazendo sempre uma auto-observação. Lembre-se que ninguém senão você lerá isso, então não engane a si mesmo.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <string key="text">Aqui, vou apenas indicar um roteiro de reflexões e te disponibilizar um espaço para que você crie suas próprias metas e possa vencê-las em seu próprio tempo, sem pressa. O ideal é que você reflita ao escrever algo, fazendo uma auto-observação.
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -167,7 +168,7 @@
                                     <constraint firstAttribute="centerX" secondItem="HUJ-bW-ful" secondAttribute="centerX" id="nPJ-09-9bP"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sem pressa para completar." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
                                 <rect key="frame" x="276" y="146" width="48.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,15 +207,14 @@
                                     <constraint firstAttribute="width" constant="322" id="5r9-P3-Sfg"/>
                                     <constraint firstAttribute="height" constant="205" id="ADo-iQ-7c8"/>
                                 </constraints>
-                                <string key="text">Nosso diálogo e as atividades que eu vou propor têm como objetivo te levar a um melhor entendimento de seus próprios desejos e te ajudar a criar um plano de mudança, caso essa seja a sua decisão. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Nosso diálogo e as atividades que eu vou propor têm como objetivo te levar a um melhor entendimento de seus próprios desejos e te ajudar a criar um plano de mudança, caso essa seja a sua decisão. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-mI-ixR">
-                                <rect key="frame" x="282.5" y="185" width="48.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Traçando objetivos." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-mI-ixR">
+                                <rect key="frame" x="282" y="185" width="48.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -254,14 +254,14 @@
                                     <constraint firstAttribute="height" constant="205" id="IPy-f4-OAO"/>
                                     <constraint firstAttribute="width" constant="323" id="sz3-Zt-oZS"/>
                                 </constraints>
-                                <string key="text">É um prazer conhece-lo, FULANO. Fico feliz de saber que está dando esse primeiro passo. É essencial que reconheçamos que é necessário mudar, antes de tentar de fato. Ninguém conhece seu corpo e sua mente melhor do que você. Assim, essa decisão não pode vir de outra pessoa.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Fico feliz que estás dando esse primeiro passo. É essencial que reconheçamos que é preciso mudar, antes de tentar de fato. Ninguém conhece seu corpo e mente melhor do que você. Essa decisão não pode vir de outra pessoa.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-EM-3tZ">
-                                <rect key="frame" x="276" y="166" width="48.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" É um prazer conhecê-lo, FULANO. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-EM-3tZ">
+                                <rect key="frame" x="128" y="166" width="345" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
