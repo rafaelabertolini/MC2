@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view tag="2" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="d7W-em-90P">
-                                        <rect key="frame" x="15" y="55" width="571" height="532"/>
+                                        <rect key="frame" x="15" y="45" width="571" height="532"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEy-Db-Ehp">
                                                 <rect key="frame" x="0.0" y="95" width="571" height="71"/>
@@ -245,7 +245,7 @@
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.3411764705882353" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="d7W-em-90P" secondAttribute="trailing" constant="14" id="2fg-K8-SLL"/>
-                                    <constraint firstItem="d7W-em-90P" firstAttribute="top" secondItem="esq-l9-WRl" secondAttribute="top" constant="55" id="88L-PP-knr"/>
+                                    <constraint firstItem="d7W-em-90P" firstAttribute="top" secondItem="esq-l9-WRl" secondAttribute="top" constant="45" id="88L-PP-knr"/>
                                     <constraint firstItem="d7W-em-90P" firstAttribute="bottom" secondItem="esq-l9-WRl" secondAttribute="bottomMargin" id="Xoa-xa-ynT"/>
                                     <constraint firstItem="d7W-em-90P" firstAttribute="leading" secondItem="esq-l9-WRl" secondAttribute="leading" constant="15" id="ayf-Nk-qac"/>
                                     <constraint firstItem="d7W-em-90P" firstAttribute="centerX" secondItem="esq-l9-WRl" secondAttribute="centerX" id="kNB-Yy-qbH"/>
