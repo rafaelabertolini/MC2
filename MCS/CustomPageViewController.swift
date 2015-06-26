@@ -12,6 +12,7 @@ class CustomPageViewController: UIViewController, BWWalkthroughPage {
     
     @IBOutlet var imageView:UIImageView?
     @IBOutlet var textLabel:UILabel?
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class CustomPageViewController: UIViewController, BWWalkthroughPage {
         var tr = CATransform3DIdentity
         tr.m34 = -1/500.0
         
+        titleLabel?.layer.transform = CATransform3DRotate(tr, CGFloat(M_PI) * (1.0 - offset), 1, 1, 1)
         textLabel?.layer.transform = CATransform3DRotate(tr, CGFloat(M_PI) * (1.0 - offset), 1, 1, 1)
         
         var tmpOffset = offset

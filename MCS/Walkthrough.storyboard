@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -100,27 +101,34 @@
                                     <constraint firstAttribute="height" constant="205" id="1gB-yl-9eT"/>
                                     <constraint firstAttribute="width" constant="324" id="uk0-Ku-sD6"/>
                                 </constraints>
-                                <mutableString key="text">Muitas vezes, as críticas da família e dos amigos são tão intensas e a culpa tão grande, que toda a energia é usada para ficar na defensiva. O meu desejo, FULANO, é que você tenha aqui um espaço unicamente seu. Onde apenas você terá acesso às informações que quiser relatar.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Muitas vezes, as críticas da família e dos amigos são tão intensas que toda a energia é usada para ficar na defensiva. O meu desejo, FULANO, é que você tenha aqui um espaço onde apenas você terá acesso às informações que quiser relatar.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y7O-qQ-89H">
-                                <rect key="frame" x="219" y="404" width="163" height="196"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Um espaço unicamente seu." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-LP-oHS">
+                                <rect key="frame" x="276" y="162" width="48.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mulherDeitada" translatesAutoresizingMaskIntoConstraints="NO" id="eBz-Lo-dHE">
+                                <rect key="frame" x="200" y="445" width="200" height="166.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eBz-Lo-dHE" secondAttribute="height" multiplier="83:69" id="aY4-uq-dfe"/>
+                                    <constraint firstAttribute="width" constant="200" id="xq1-qY-rTq"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.51372549019607838" green="0.72941176470588232" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UMf-LP-oHS" firstAttribute="top" secondItem="Pn5-dG-6Iv" secondAttribute="bottom" constant="142" id="1gP-bY-irm"/>
                             <constraint firstAttribute="centerX" secondItem="AaH-7K-LjG" secondAttribute="centerX" constant="-1" id="3fT-Mt-F5O"/>
-                            <constraint firstAttribute="centerX" secondItem="Y7O-qQ-89H" secondAttribute="centerX" id="7nh-08-KPd"/>
+                            <constraint firstAttribute="centerX" secondItem="UMf-LP-oHS" secondAttribute="centerX" id="9oB-81-nvw"/>
                             <constraint firstAttribute="centerY" secondItem="AaH-7K-LjG" secondAttribute="centerY" constant="-34.5" id="9oi-JC-fTu"/>
-                            <constraint firstItem="Qmb-H6-Z3E" firstAttribute="top" secondItem="Y7O-qQ-89H" secondAttribute="bottom" id="iDh-OD-Pkg"/>
+                            <constraint firstAttribute="centerX" secondItem="eBz-Lo-dHE" secondAttribute="centerX" id="E1z-cq-oCp"/>
+                            <constraint firstItem="eBz-Lo-dHE" firstAttribute="top" secondItem="AaH-7K-LjG" secondAttribute="bottom" constant="8" id="Jjc-Ki-lq2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Y7O-qQ-89H"/>
-                            </mask>
-                        </variation>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
@@ -147,9 +155,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-YN-NyM">
-                                <rect key="frame" x="0.0" y="0.0" width="618" height="600"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjC-th-GUy">
                                 <rect key="frame" x="0.0" y="246" width="600" height="354"/>
                                 <subviews>
@@ -159,8 +164,9 @@
                                             <constraint firstAttribute="width" constant="346" id="7AH-Q9-Mnj"/>
                                             <constraint firstAttribute="height" constant="257" id="uHB-dF-sww"/>
                                         </constraints>
-                                        <mutableString key="text">Aqui, vou apenas indicar um roteiro de reflexões para que você realize individualmente e te disponibilizar um espaço para que você crie suas próprias metas e assim possas vencê-las em seu próprio tempo, sem pressa alguma em completar as atividades aqui propostas. A única coisa que eu gostaria de te pedir é que você reflita bem ao escrever algo, fazendo sempre uma auto-observação. Lembre-se que ninguém senão você lerá isso, então não engane a si mesmo.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <string key="text">Aqui, vou apenas indicar um roteiro de reflexões e te disponibilizar um espaço para que você crie suas próprias metas e possa vencê-las em seu próprio tempo, sem pressa. O ideal é que você reflita ao escrever algo, fazendo uma auto-observação.
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -172,18 +178,26 @@
                                     <constraint firstAttribute="centerX" secondItem="HUJ-bW-ful" secondAttribute="centerX" id="nPJ-09-9bP"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem pressa para completar." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
+                                <rect key="frame" x="177.5" y="356" width="245.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mulherPensando" translatesAutoresizingMaskIntoConstraints="NO" id="o0U-HR-7wS">
+                                <rect key="frame" x="200" y="20" width="200" height="238"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470588235294" green="0.33333333333333331" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HjC-th-GUy" firstAttribute="leading" secondItem="ilO-KC-33e" secondAttribute="leadingMargin" constant="-16" id="2Fd-iZ-WKh"/>
                             <constraint firstItem="Q0s-D3-K13" firstAttribute="top" secondItem="HjC-th-GUy" secondAttribute="bottom" id="CNy-r7-UAe"/>
+                            <constraint firstItem="bC6-Qa-swV" firstAttribute="top" secondItem="o0U-HR-7wS" secondAttribute="bottom" constant="98" id="Jg5-Ak-bTa"/>
+                            <constraint firstAttribute="centerX" secondItem="bC6-Qa-swV" secondAttribute="centerX" id="NVi-FQ-d7Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HjC-th-GUy" secondAttribute="trailing" constant="-16" id="X6X-7r-4DX"/>
+                            <constraint firstAttribute="centerX" secondItem="o0U-HR-7wS" secondAttribute="centerX" constant="-0.5" id="bZu-KK-IO3"/>
+                            <constraint firstItem="bC6-Qa-swV" firstAttribute="top" secondItem="At2-Nx-1U5" secondAttribute="bottom" constant="336" id="fO7-ra-0KQ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="TcH-YN-NyM"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-I0-u1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,37 +217,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDt-ZO-IbC">
-                                <rect key="frame" x="139" y="233" width="322" height="205"/>
+                                <rect key="frame" x="139" y="223" width="322" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="322" id="5r9-P3-Sfg"/>
                                     <constraint firstAttribute="height" constant="205" id="ADo-iQ-7c8"/>
                                 </constraints>
-                                <string key="text">Nosso diálogo e as atividades que eu vou propor têm como objetivo te levar a um melhor entendimento de seus próprios desejos e te ajudar a criar um plano de mudança, caso essa seja a sua decisão. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Nosso diálogo e as atividades que eu vou propor têm como objetivo te levar a um melhor entendimento de seus próprios desejos e te ajudar a criar um plano de mudança, caso essa seja a sua decisão. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-IJ-fx7">
-                                <rect key="frame" x="219" y="404" width="163" height="196"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Traçando objetivos." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-mI-ixR">
+                                <rect key="frame" x="282" y="185" width="48.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="afonsoQuadro" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-8d-mTb">
+                                <rect key="frame" x="217.5" y="393" width="166" height="307"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.75294117647058822" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="bS2-IJ-fx7" secondAttribute="centerX" id="EEB-T1-4Yx"/>
-                            <constraint firstItem="Deg-VZ-J6w" firstAttribute="top" secondItem="bS2-IJ-fx7" secondAttribute="bottom" id="GgT-23-Wr4"/>
+                            <constraint firstAttribute="centerX" secondItem="iBk-8d-mTb" secondAttribute="centerX" constant="-0.5" id="47d-gF-eE8"/>
+                            <constraint firstItem="iBk-8d-mTb" firstAttribute="top" secondItem="dDt-ZO-IbC" secondAttribute="bottom" constant="-35" id="K21-Vi-Sr3"/>
                             <constraint firstAttribute="centerX" secondItem="dDt-ZO-IbC" secondAttribute="centerX" id="YuE-Jg-mRn"/>
-                            <constraint firstAttribute="centerY" secondItem="dDt-ZO-IbC" secondAttribute="centerY" constant="-35.5" id="qS4-9I-yYS"/>
+                            <constraint firstItem="Gst-mI-ixR" firstAttribute="top" secondItem="P0S-X1-bG6" secondAttribute="bottom" constant="165" id="egw-No-cVI"/>
+                            <constraint firstAttribute="centerY" secondItem="dDt-ZO-IbC" secondAttribute="centerY" constant="-25.5" id="qS4-9I-yYS"/>
+                            <constraint firstAttribute="centerX" secondItem="Gst-mI-ixR" secondAttribute="centerX" constant="-7" id="rDV-54-nS5"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="bS2-IJ-fx7"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="bS2-IJ-fx7" id="jqU-GI-bQP"/>
                         <outlet property="textLabel" destination="dDt-ZO-IbC" id="dxu-Kq-D5R"/>
+                        <outlet property="titleLabel" destination="Gst-mI-ixR" id="OW9-T0-ukr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEM-Yv-NRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -258,27 +274,30 @@
                                     <constraint firstAttribute="height" constant="205" id="IPy-f4-OAO"/>
                                     <constraint firstAttribute="width" constant="323" id="sz3-Zt-oZS"/>
                                 </constraints>
-                                <mutableString key="text">É um prazer conhece-lo, FULANO. Fico feliz de saber que está dando esse primeiro passo. É essencial que reconheçamos que é necessário mudar, antes de tentar de fato. Ninguém conhece seu corpo e sua mente melhor do que você. Assim, essa decisão não pode vir de outra pessoa.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Fico feliz que estás dando esse primeiro passo. É essencial que reconheçamos que é preciso mudar, antes de tentar de fato. Ninguém conhece seu corpo e mente melhor do que você. Essa decisão não pode vir de outra pessoa.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="wBV-mz-87h">
-                                <rect key="frame" x="219" y="404" width="163" height="196"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" É um prazer conhecê-lo, FULANO. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-EM-3tZ">
+                                <rect key="frame" x="128" y="166" width="344.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balanca" translatesAutoresizingMaskIntoConstraints="NO" id="xBC-9R-PtJ">
+                                <rect key="frame" x="200" y="449" width="200" height="145"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1960784314" green="0.41176470590000003" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="wBV-mz-87h" secondAttribute="centerX" id="8PI-eA-fGA"/>
-                            <constraint firstItem="bbg-ej-M6o" firstAttribute="top" secondItem="wBV-mz-87h" secondAttribute="bottom" id="Eu4-pD-jNo"/>
+                            <constraint firstItem="YOQ-EM-3tZ" firstAttribute="top" secondItem="P6H-j1-FXv" secondAttribute="bottom" constant="146" id="3iB-Mv-uls"/>
+                            <constraint firstItem="xBC-9R-PtJ" firstAttribute="top" secondItem="QgZ-gl-DLV" secondAttribute="bottom" constant="12" id="O6x-Zb-Wwi"/>
                             <constraint firstAttribute="centerX" secondItem="QgZ-gl-DLV" secondAttribute="centerX" id="RKn-aa-xJe"/>
+                            <constraint firstAttribute="centerX" secondItem="xBC-9R-PtJ" secondAttribute="centerX" id="SN6-wX-P0K"/>
                             <constraint firstAttribute="centerY" secondItem="QgZ-gl-DLV" secondAttribute="centerY" constant="-34.5" id="fNR-BP-eFw"/>
+                            <constraint firstAttribute="centerX" secondItem="YOQ-EM-3tZ" secondAttribute="centerX" id="xu7-fh-Eda"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="wBV-mz-87h"/>
-                            </mask>
-                        </variation>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
@@ -293,9 +312,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg.jpg" width="486" height="685"/>
-        <image name="iPhoneScreen.png" width="163" height="196"/>
+        <image name="afonsoQuadro" width="166" height="307"/>
+        <image name="balanca" width="200" height="145"/>
         <image name="leftarrow.png" width="50" height="50"/>
+        <image name="mulherDeitada" width="166" height="138"/>
+        <image name="mulherPensando" width="200" height="238"/>
         <image name="rightarrow.png" width="50" height="50"/>
     </resources>
 </document>
