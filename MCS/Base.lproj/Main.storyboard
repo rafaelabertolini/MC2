@@ -423,18 +423,22 @@
                                     <action selector="showWalkthrough" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVq-Nz-fN5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTl-BV-X8u">
-                                <rect key="frame" x="149" y="157" width="303" height="205"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTl-BV-X8u">
+                                <rect key="frame" x="135" y="157" width="330" height="205"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="303" id="UH4-cf-e9i"/>
+                                    <constraint firstAttribute="width" constant="330" id="UH4-cf-e9i"/>
                                     <constraint firstAttribute="height" constant="205" id="hyc-nL-fzC"/>
                                 </constraints>
-                                <string key="text">Olá! Primeiramente, gostaria de me apresentar. Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas com muito esforço estou longe desse mundo já há 7 anos. Se estás aqui é porque tens vontade de mudar, seja um hábito ruim ou algo mais pesado. Gostaria de te ajudar. Mas por hora só quero saber seu nome. Como posso chamá-lo?
-
-______________________</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas estou longe desse mundo há 7 anos. Sei que tens vontade de mudar. Gostaria de te ajudar. Mas por ora só quero saber seu nome. Como posso chamá-lo?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UH4-cf-e9i"/>
+                                        <exclude reference="hyc-nL-fzC"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QqV-PR-u3n">
                                 <rect key="frame" x="204" y="393" width="192" height="30"/>
@@ -444,16 +448,32 @@ ______________________</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Olá! Gostaria de me apresentar. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9E9-XP-Oh1">
+                                <rect key="frame" x="174" y="122" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.62745098039215685" green="0.77254901960784317" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QqV-PR-u3n" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" id="3qL-Xn-CWz"/>
+                            <constraint firstItem="TTl-BV-X8u" firstAttribute="top" secondItem="9E9-XP-Oh1" secondAttribute="bottom" constant="5" id="CMr-pB-IHa"/>
                             <constraint firstItem="QqV-PR-u3n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dq6-hs-esL"/>
                             <constraint firstItem="QqV-PR-u3n" firstAttribute="top" secondItem="TTl-BV-X8u" secondAttribute="bottom" constant="31" id="NeH-pe-hgU"/>
+                            <constraint firstItem="9E9-XP-Oh1" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" constant="-2.5" id="U0x-Wy-FpO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Yb-HB-zq0" secondAttribute="bottom" constant="121" id="co5-oK-T7y"/>
                             <constraint firstItem="6Yb-HB-zq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="277" id="gNY-56-R9n"/>
                             <constraint firstItem="6Yb-HB-zq0" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="26" id="tsp-Br-eSe"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CMr-pB-IHa"/>
+                                <exclude reference="U0x-Wy-FpO"/>
+                                <exclude reference="3qL-Xn-CWz"/>
+                                <exclude reference="NeH-pe-hgU"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
