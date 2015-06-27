@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="width" constant="324" id="uk0-Ku-sD6"/>
                                 </constraints>
                                 <string key="text">Muitas vezes, as críticas da família e dos amigos são tão intensas que toda a energia é usada para ficar na defensiva. O meu desejo, FULANO, é que você tenha aqui um espaço onde apenas você terá acesso às informações que quiser relatar.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -166,7 +166,7 @@
                                         </constraints>
                                         <string key="text">Aqui, vou apenas indicar um roteiro de reflexões e te disponibilizar um espaço para que você crie suas próprias metas e possa vencê-las em seu próprio tempo, sem pressa. O ideal é que você reflita ao escrever algo, fazendo uma auto-observação.
 </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -178,9 +178,9 @@
                                     <constraint firstAttribute="centerX" secondItem="HUJ-bW-ful" secondAttribute="centerX" id="nPJ-09-9bP"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem pressa para completar." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
-                                <rect key="frame" x="177.5" y="356" width="245.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sem pressa para completar." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
+                                <rect key="frame" x="177" y="356" width="245.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -223,7 +223,7 @@
                                     <constraint firstAttribute="height" constant="205" id="ADo-iQ-7c8"/>
                                 </constraints>
                                 <string key="text">Nosso diálogo e as atividades que eu vou propor têm como objetivo te levar a um melhor entendimento de seus próprios desejos e te ajudar a criar um plano de mudança, caso essa seja a sua decisão. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -234,10 +234,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="afonsoQuadro" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-8d-mTb">
-                                <rect key="frame" x="217.5" y="393" width="166" height="307"/>
+                                <rect key="frame" x="217" y="393" width="166" height="307"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92941176470588238" green="0.75294117647058822" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.85539261921487675" green="0.66798119136289924" blue="0.15061057267526573" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="iBk-8d-mTb" secondAttribute="centerX" constant="-0.5" id="47d-gF-eE8"/>
                             <constraint firstItem="iBk-8d-mTb" firstAttribute="top" secondItem="dDt-ZO-IbC" secondAttribute="bottom" constant="-35" id="K21-Vi-Sr3"/>
@@ -275,7 +275,7 @@
                                     <constraint firstAttribute="width" constant="323" id="sz3-Zt-oZS"/>
                                 </constraints>
                                 <string key="text">Fico feliz que estás dando esse primeiro passo. É essencial que reconheçamos que é preciso mudar, antes de tentar de fato. Ninguém conhece seu corpo e mente melhor do que você. Essa decisão não pode vir de outra pessoa.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
