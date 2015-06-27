@@ -9,5 +9,12 @@
 import UIKit
 
 class ProblemaViewController: UIViewController {
+    
+    @IBOutlet weak var oQueView: UIView!
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = false
+        oQueView.layer.cornerRadius = 25
+    }
 
 }
