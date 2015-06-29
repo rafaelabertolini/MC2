@@ -57,25 +57,23 @@ class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage {
             speed.x += speedVariance.x
             speed.y += speedVariance.y
             subsWeights.append(speed)
-            
-         self.loadDataNSUD()
-        
         }
         
+        self.loadDataNSUD()
     }
     
-    // load NSUserDefaults 
+    
+    // load NSUserDefaults
     func loadDataNSUD() {
         
         var defaults: NSUserDefaults = NSUserDefaults()
         
         if let nameIsNotNill = defaults.objectForKey("name") as? String {
-        self.nameLabel.text = defaults.objectForKey("name") as? String
-       
+            if self.nameLabel != nil {
+                self.nameLabel.text = nameIsNotNill
+            }
         }
-        
-//      println(NSUserDefaults.standardUserDefaults().dictionaryRepresentation())
-        
+               
     }
     
 
