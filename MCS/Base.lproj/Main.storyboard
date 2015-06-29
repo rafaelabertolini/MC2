@@ -494,7 +494,7 @@
                                     <constraint firstAttribute="width" constant="330" id="UH4-cf-e9i"/>
                                     <constraint firstAttribute="height" constant="205" id="hyc-nL-fzC"/>
                                 </constraints>
-                                <string key="text">Olá! Primeiramente, gostaria de me apresentar. Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas com muito esforço estou longe desse mundo já há 7 anos. Se estás aqui é porque tens vontade de mudar, seja um hábito ruim ou algo mais pesado. Gostaria de te ajudar. Mas por hora só quero saber seu nome. Como posso chamá-lo?</string>
+                                <string key="text">Olá! Gostaria de me apresentar. Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas estou longe desse mundo já há 7 anos. Sei que tens vontade de mudar. Gostaria de te ajudar. Mas por ora só quero saber seu nome. Como posso chamá-lo?</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
