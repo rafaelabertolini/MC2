@@ -45,6 +45,9 @@ class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage {
     
     private var subsWeights:[CGPoint] = Array()
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.masksToBounds = true
@@ -56,8 +59,25 @@ class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage {
             subsWeights.append(speed)
         }
         
+        self.loadDataNSUD()
     }
     
+    
+    // load NSUserDefaults
+    func loadDataNSUD() {
+        
+        var defaults: NSUserDefaults = NSUserDefaults()
+        
+        if let nameIsNotNill = defaults.objectForKey("name") as? String {
+            if self.nameLabel != nil {
+                self.nameLabel.text = nameIsNotNill
+            }
+        }
+               
+    }
+    
+
+
     // MARK: BWWalkthroughPage Implementation
     
     func walkthroughDidScroll(position: CGFloat, offset: CGFloat) {

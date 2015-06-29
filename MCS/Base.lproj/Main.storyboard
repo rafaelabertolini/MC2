@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5W2-os-jjW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="fSD-J0-6hr">
             <objects>
-                <tabBarController id="5W2-os-jjW" customClass="CustomTabBarController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="initial" id="5W2-os-jjW" customClass="CustomTabBarController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xO9-el-gI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -30,7 +30,7 @@
         <!--Inicio-->
         <scene sceneID="dXI-kL-94S">
             <objects>
-                <viewController title="Inicio" id="ziz-aQ-Xsk" customClass="InitialViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="passos" title="Inicio" id="ziz-aQ-Xsk" customClass="InitialViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PBz-hr-bsc"/>
                         <viewControllerLayoutGuide type="bottom" id="dZO-CT-dQj"/>
@@ -134,10 +134,10 @@
                                                         <rect key="frame" x="13" y="0.0" width="525" height="71"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeuplanoBloqueado" translatesAutoresizingMaskIntoConstraints="NO" id="3V0-T9-uTG">
-                                                                <rect key="frame" x="9" y="3" width="63" height="64"/>
+                                                                <rect key="frame" x="9" y="-59" width="189" height="189"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="S64-ff-BGb">
-                                                                <rect key="frame" x="86" y="0.0" width="429" height="71"/>
+                                                                <rect key="frame" x="212" y="0.0" width="303" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Seu plano">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,10 +175,10 @@
                                                         <rect key="frame" x="33" y="0.0" width="525" height="71"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MetasBloqueado-1" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-3d-8ym">
-                                                                <rect key="frame" x="15" y="4" width="62" height="62"/>
+                                                                <rect key="frame" x="15" y="4" width="63" height="63"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3Ed-q9-diS">
-                                                                <rect key="frame" x="91" y="0.0" width="424" height="71"/>
+                                                                <rect key="frame" x="92" y="0.0" width="423" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Criar meta">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -669,6 +669,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="saveDataClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hiy-97-zkT"/>
                                     <action selector="showWalkthrough" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVq-Nz-fN5"/>
                                 </connections>
                             </button>
@@ -732,7 +733,7 @@
                             <constraint firstItem="TTl-BV-X8u" firstAttribute="centerX" secondItem="QqV-PR-u3n" secondAttribute="centerX" id="SxM-DV-Zh7"/>
                             <constraint firstItem="9E9-XP-Oh1" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" constant="-2.5" id="U0x-Wy-FpO"/>
                             <constraint firstItem="9E9-XP-Oh1" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" constant="-2" id="Z6s-BZ-b7D"/>
-                            <constraint firstItem="6Yb-HB-zq0" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="10" id="bHW-r7-0WX"/>
+                            <constraint firstItem="6Yb-HB-zq0" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="26" id="bHW-r7-0WX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Yb-HB-zq0" secondAttribute="bottom" constant="121" id="co5-oK-T7y"/>
                             <constraint firstItem="6Yb-HB-zq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="277" id="gNY-56-R9n"/>
                             <constraint firstItem="2PX-oR-C63" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="5" id="hwj-Ac-1Jb"/>
@@ -754,6 +755,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="QqV-PR-u3n" id="fpc-vJ-8Ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -784,11 +788,11 @@
         <image name="Home_2_" width="32" height="32"/>
         <image name="Info" width="27" height="31"/>
         <image name="Lightbulb_1_" width="22" height="32"/>
-        <image name="MetasBloqueado-1" width="62" height="62"/>
+        <image name="MetasBloqueado-1" width="63" height="63"/>
         <image name="Problema" width="62" height="62"/>
         <image name="ProblemaBloqueado" width="62" height="62"/>
         <image name="PrósContrasBloqueado" width="63" height="63"/>
-        <image name="SeuplanoBloqueado" width="63" height="64"/>
+        <image name="SeuplanoBloqueado" width="189" height="189"/>
         <image name="homem" width="237" height="824"/>
     </resources>
     <color key="tintColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>

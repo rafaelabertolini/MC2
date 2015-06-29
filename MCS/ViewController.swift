@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,6 +37,20 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    
+//    @IBAction func loadDataClicked(sender: AnyObject) {
+//        
+//        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+//        
+//        if let nameIsNotNill = defaults.objectForKey("name") as? String {
+//            self.nameField.text = defaults.objectForKey("name") as! String
+//        }
+//        
+//    }
+
+    
+    
+    // walkthrough call
     @IBAction func showWalkthrough(){
         
         // Get view controllers and build the walkthrough
@@ -50,6 +69,19 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
         walkthrough.addViewController(page_zero)
         
         self.presentViewController(walkthrough, animated: true, completion: nil)
+    
+    }
+    
+    
+    // save userDefaults
+    @IBAction func saveDataClicked(sender: AnyObject) {
+        
+        var defaults: NSUserDefaults = NSUserDefaults()
+        
+        defaults.setObject(self.nameField.text, forKey: "name")
+        
+        defaults.synchronize()
+        
     }
     
     
@@ -62,5 +94,8 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     func walkthroughCloseButtonPressed() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    
     
 }
