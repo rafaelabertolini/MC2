@@ -76,7 +76,7 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     // save userDefaults
     @IBAction func saveDataClicked(sender: AnyObject) {
         
-        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        var defaults: NSUserDefaults = NSUserDefaults()
         
         defaults.setObject(self.nameField.text, forKey: "name")
         

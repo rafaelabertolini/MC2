@@ -321,10 +321,13 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="InOut"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="nameLabel" destination="jBS-Lg-CLH" id="gsJ-AH-CD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2t-6N-Fal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="-803"/>
+            <point key="canvasLocation" x="669" y="-853"/>
         </scene>
     </scenes>
     <resources>

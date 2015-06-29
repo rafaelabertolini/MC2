@@ -85,7 +85,6 @@
 				954930E51B3DB3D4004C62A8 /* leftarrow@2x.png */,
 				954930D21B3CD738004C62A8 /* BWWalkthroughPageViewController.swift */,
 				954930D41B3CD7D8004C62A8 /* BWWalkthroughViewController.swift */,
-				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				954930D61B3CD8EC004C62A8 /* CustomPageViewController.swift */,
 			);
 			name = Tutorial;
@@ -114,8 +113,8 @@
 			children = (
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
-				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
+				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
 				99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */,
 				954930DA1B3CDB3F004C62A8 /* Walkthrough.storyboard */,
 				95F9C0BB1B39C3F8006358F4 /* Main.storyboard */,
