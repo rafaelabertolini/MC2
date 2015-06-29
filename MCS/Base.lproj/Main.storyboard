@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5W2-os-jjW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -322,7 +322,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teA-dJ-Nzn">
-                                        <rect key="frame" x="27" y="123" width="546" height="52"/>
+                                        <rect key="frame" x="20" y="123" width="560" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2v-ct-XpY">
                                                 <rect key="frame" x="47" y="0.0" width="75.5" height="52"/>
@@ -345,7 +345,7 @@
                                     <constraint firstAttribute="centerX" secondItem="teA-dJ-Nzn" secondAttribute="centerX" id="FpV-BH-Fpb"/>
                                     <constraint firstItem="teA-dJ-Nzn" firstAttribute="top" secondItem="OB3-SH-AWS" secondAttribute="bottom" constant="20" id="HFf-qb-6ay"/>
                                     <constraint firstAttribute="trailing" secondItem="OB3-SH-AWS" secondAttribute="trailing" id="UBQ-in-wGF"/>
-                                    <constraint firstItem="teA-dJ-Nzn" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="27" id="VGu-cx-s4D"/>
+                                    <constraint firstItem="teA-dJ-Nzn" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="20" id="VGu-cx-s4D"/>
                                     <constraint firstItem="OB3-SH-AWS" firstAttribute="top" secondItem="USC-hu-96y" secondAttribute="top" constant="20" id="cIB-Z1-CD4"/>
                                     <constraint firstItem="OB3-SH-AWS" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" id="lGf-mm-x2y"/>
                                 </constraints>
@@ -493,8 +493,8 @@
                                     <constraint firstAttribute="width" constant="330" id="UH4-cf-e9i"/>
                                     <constraint firstAttribute="height" constant="205" id="hyc-nL-fzC"/>
                                 </constraints>
-                                <string key="text">Olá! Primeiramente, gostaria de me apresentar. Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas com muito esforço estou longe desse mundo já há 7 anos. Se estás aqui é porque tens vontade de mudar, seja um hábito ruim ou algo mais pesado. Gostaria de te ajudar. Mas por hora só quero saber seu nome. Como posso chamá-lo?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas estou longe desse mundo há 7 anos. Sei que tens vontade de mudar. Gostaria de te ajudar. Mas por ora só quero saber seu nome. Como posso chamá-lo?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
