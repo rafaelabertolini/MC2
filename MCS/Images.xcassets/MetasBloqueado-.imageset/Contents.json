@@ -2,16 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "MetasBloqueado.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "MetasBloqueado@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "MetasBloqueado.png"
+      "filename" : "MetasBloqueado@3x.png"
     }
   ],
   "info" : {
