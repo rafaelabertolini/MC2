@@ -325,7 +325,7 @@
                                         <rect key="frame" x="27" y="123" width="546" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2v-ct-XpY">
-                                                <rect key="frame" x="47" y="0.0" width="75.5" height="52"/>
+                                                <rect key="frame" x="47" y="0.0" width="76" height="52"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -483,6 +483,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="saveDataClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hiy-97-zkT"/>
                                     <action selector="showWalkthrough" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVq-Nz-fN5"/>
                                 </connections>
                             </button>
