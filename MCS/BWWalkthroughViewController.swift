@@ -145,14 +145,15 @@ At the moment it's only used to perform custom animations on didScroll.
     // TODO: If you want to implement a "skip" option
     // connect a button to this IBAction and implement the delegate with the skipWalkthrough
     @IBAction func close(sender: AnyObject){
-        delegate?.walkthroughCloseButtonPressed?()
+      
+        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var vc = storyboard.instantiateViewControllerWithIdentifier("passos") as! InitialViewController
+        self.showViewController(vc, sender: self)
+        
+//      delegate?.walkthroughCloseButtonPressed?()
     }
     
-    /**
-    addViewController
-    Add a new page to the walkthrough.
-    To have information about the current position of the page in the walkthrough add a UIVIewController which implements BWWalkthroughPage
-    */
+    
     func addViewController(vc:UIViewController)->Void{
         
         controllers.append(vc)

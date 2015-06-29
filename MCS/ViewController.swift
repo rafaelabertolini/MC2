@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -62,5 +67,8 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     func walkthroughCloseButtonPressed() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    
     
 }

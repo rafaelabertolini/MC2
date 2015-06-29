@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5W2-os-jjW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -30,7 +30,7 @@
         <!--Inicio-->
         <scene sceneID="dXI-kL-94S">
             <objects>
-                <viewController title="Inicio" id="ziz-aQ-Xsk" customClass="InitialViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="passos" title="Inicio" id="ziz-aQ-Xsk" customClass="InitialViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PBz-hr-bsc"/>
                         <viewControllerLayoutGuide type="bottom" id="dZO-CT-dQj"/>
@@ -546,7 +546,7 @@
                             <constraint firstItem="TTl-BV-X8u" firstAttribute="centerX" secondItem="QqV-PR-u3n" secondAttribute="centerX" id="SxM-DV-Zh7"/>
                             <constraint firstItem="9E9-XP-Oh1" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" constant="-2.5" id="U0x-Wy-FpO"/>
                             <constraint firstItem="9E9-XP-Oh1" firstAttribute="centerX" secondItem="TTl-BV-X8u" secondAttribute="centerX" constant="-2" id="Z6s-BZ-b7D"/>
-                            <constraint firstItem="6Yb-HB-zq0" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="10" id="bHW-r7-0WX"/>
+                            <constraint firstItem="6Yb-HB-zq0" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="26" id="bHW-r7-0WX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Yb-HB-zq0" secondAttribute="bottom" constant="121" id="co5-oK-T7y"/>
                             <constraint firstItem="6Yb-HB-zq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="277" id="gNY-56-R9n"/>
                             <constraint firstItem="2PX-oR-C63" firstAttribute="top" secondItem="QqV-PR-u3n" secondAttribute="bottom" constant="5" id="hwj-Ac-1Jb"/>
@@ -568,6 +568,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="QqV-PR-u3n" id="fpc-vJ-8Ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
