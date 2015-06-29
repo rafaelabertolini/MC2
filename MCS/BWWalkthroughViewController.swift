@@ -147,7 +147,7 @@ At the moment it's only used to perform custom animations on didScroll.
     @IBAction func close(sender: AnyObject){
       
         var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var vc = storyboard.instantiateViewControllerWithIdentifier("passos") as! InitialViewController
+        var vc = storyboard.instantiateViewControllerWithIdentifier("initial") as! CustomTabBarController
         self.showViewController(vc, sender: self)
         
 //      delegate?.walkthroughCloseButtonPressed?()

@@ -9,7 +9,7 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="fSD-J0-6hr">
             <objects>
-                <tabBarController id="5W2-os-jjW" customClass="CustomTabBarController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="initial" id="5W2-os-jjW" customClass="CustomTabBarController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xO9-el-gI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
