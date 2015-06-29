@@ -45,6 +45,10 @@ class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage {
     
     private var subsWeights:[CGPoint] = Array()
     
+    var nameLabel = UILabel()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.masksToBounds = true
@@ -57,6 +61,18 @@ class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage {
         }
         
     }
+    
+    func loadDataClicked(sender: AnyObject) {
+        
+        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        if let nameIsNotNill = defaults.objectForKey("name") as? String {
+            self.nameLabel.text = defaults.objectForKey("name") as? String
+        }
+        
+    }
+    
+    
     
     // MARK: BWWalkthroughPage Implementation
     

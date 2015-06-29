@@ -107,13 +107,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Um espaço unicamente seu." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMf-LP-oHS">
-                                <rect key="frame" x="276" y="162" width="48.5" height="23"/>
+                                <rect key="frame" x="276" y="162" width="49" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mulherDeitada" translatesAutoresizingMaskIntoConstraints="NO" id="eBz-Lo-dHE">
-                                <rect key="frame" x="200" y="445" width="200" height="166.5"/>
+                                <rect key="frame" x="200" y="445" width="200" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eBz-Lo-dHE" secondAttribute="height" multiplier="83:69" id="aY4-uq-dfe"/>
                                     <constraint firstAttribute="width" constant="200" id="xq1-qY-rTq"/>
@@ -179,7 +179,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sem pressa para completar." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-Qa-swV">
-                                <rect key="frame" x="177" y="356" width="245.5" height="23"/>
+                                <rect key="frame" x="177" y="356" width="246" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -228,7 +228,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Traçando objetivos." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-mI-ixR">
-                                <rect key="frame" x="282" y="185" width="48.5" height="23"/>
+                                <rect key="frame" x="282" y="185" width="49" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -280,7 +280,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" É um prazer conhecê-lo, FULANO. " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-EM-3tZ">
-                                <rect key="frame" x="128" y="166" width="344.5" height="25.5"/>
+                                <rect key="frame" x="128" y="166" width="345" height="26"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
