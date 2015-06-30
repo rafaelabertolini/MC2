@@ -24,7 +24,7 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     @IBOutlet weak var iniciarButton: UIButton!
     
-    var pickerData = ["Comprimidos", "Doses/Copos", "Cigarros", "Gramas", "Carreiras"]
+    var pickerData = ["Comprimidos", "Doses/Copos", "Cigarros", "Gramas", "Carreiras", "Pedras"]
     
     var morePickerData = ["1 vez", "2 vezes", "3 vezes", "4 vezes", "5 vezes", "6 vezes", "7 vezes", "8 vezes", "9 vezes", "10 vezes", "Mais de 10 vezes"]
     
