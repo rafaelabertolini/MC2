@@ -22,15 +22,21 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
+        //let userDefaults = NSUserDefaults.standardUserDefaults()
         
-        if !userDefaults.boolForKey("walkthroughPresented") {
+        //println("ass")
+        //!userDefaults.boolForKey("walkthroughPresented")
+        if  NSUserDefaults.standardUserDefaults().stringForKey("name") != nil{
             
-            showWalkthrough()
+            performSegueWithIdentifier("tutorialSegue", sender: self)
             
-            userDefaults.setBool(true, forKey: "walkthroughPresented")
-            userDefaults.synchronize()
-        }
+            //println("dess")
+            //showWalkthrough()
+            
+            //NSUserDefaults.standardUserDefaults().setBool(true, forKey: "walkthroughPresented")
+            //NSUserDefaults.standardUserDefaults().synchronize()
+        } 
+        //println("assss")
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,6 +99,12 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
     func walkthroughCloseButtonPressed() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "tutorialSegue"){
+            print("hueheuheuhheu")
+        }
     }
     
     
