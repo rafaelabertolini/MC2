@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -24,11 +25,22 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     @IBOutlet weak var iniciarButton: UIButton!
     
+    @IBOutlet weak var oQueUsoTextField: UITextField!
+    
+    @IBOutlet weak var quantoUsoTextField: UITextField!
+    
+    
     var pickerData = ["Comprimidos", "Doses/Copos", "Cigarros", "Gramas", "Carreiras", "Pedras"]
     
     var morePickerData = ["1 vez", "2 vezes", "3 vezes", "4 vezes", "5 vezes", "6 vezes", "7 vezes", "8 vezes", "9 vezes", "10 vezes", "Mais de 10 vezes"]
     
     var dataPickerData = ["Dia", "Semana", "Mês"]
+    
+    var medidaQ = ""
+    
+    var medidaF = ""
+    
+    var vezes = ""
     
     //MARK: - Delegates and data sources
     //MARK: Data Sources
@@ -62,6 +74,14 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if(pickerView.tag == 100){
+            medidaQ = pickerData[row]
+        } else if (pickerView.tag == 200){
+            vezes = morePickerData[row]
+        } else if (pickerView.tag == 300){
+            medidaF = dataPickerData[row]
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -86,4 +106,34 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBar.hidden = false
     }
+    
+    
+    func salvarProblema() {
+        
+        let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity = NSEntityDescription.entityForName("Problem", inManagedObjectContext: managedContext)
+        let problem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Problem
+        
+        problem.oque = oQueUsoTextField.text
+        problem.frequencia = vezes
+        problem.medidafreq = medidaF
+        problem.medidaqtd = medidaQ
+        problem.quanto = quantoUsoTextField.text.toInt()!
+        
+        
+        /* let entity =  NSEntityDescription.entityForName("Reflection",    inManagedObjectContext:    managedContext)
+        let reflection = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:managedContext)
+        
+        reflection.setValue(note, forKey: "note")
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }
+        
+        notes.append(reflection) */
+    }
+    
 }

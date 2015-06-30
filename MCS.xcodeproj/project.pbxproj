@@ -28,6 +28,11 @@
 		95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */; };
 		9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */; };
 		999903D11B43235500F0BF28 /* ProsContrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D01B43235500F0BF28 /* ProsContrasViewController.swift */; };
+		999903D31B4329AB00F0BF28 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D21B4329AB00F0BF28 /* Step.swift */; };
+		999903D51B4329AC00F0BF28 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D41B4329AC00F0BF28 /* Goal.swift */; };
+		999903D71B4329AC00F0BF28 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D61B4329AC00F0BF28 /* Plan.swift */; };
+		999903D91B4329AC00F0BF28 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D81B4329AC00F0BF28 /* Problem.swift */; };
+		999903DB1B4329AC00F0BF28 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903DA1B4329AC00F0BF28 /* Reflection.swift */; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +72,11 @@
 		95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaPreenchido.swift; sourceTree = "<group>"; };
 		999903D01B43235500F0BF28 /* ProsContrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProsContrasViewController.swift; sourceTree = "<group>"; };
+		999903D21B4329AB00F0BF28 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		999903D41B4329AC00F0BF28 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		999903D61B4329AC00F0BF28 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		999903D81B4329AC00F0BF28 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		999903DA1B4329AC00F0BF28 /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +113,7 @@
 		95F9C0A61B39C3F8006358F4 = {
 			isa = PBXGroup;
 			children = (
+				999903DC1B4329B200F0BF28 /* Entities */,
 				95F9C0B11B39C3F8006358F4 /* MCS */,
 				95F9C0CA1B39C3F8006358F4 /* MCSTests */,
 				95F9C0B01B39C3F8006358F4 /* Products */,
@@ -123,6 +134,7 @@
 			children = (
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
+				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
@@ -138,7 +150,6 @@
 				95F9C0C01B39C3F8006358F4 /* LaunchScreen.xib */,
 				95F9C0B61B39C3F8006358F4 /* MCS.xcdatamodeld */,
 				95F9C0B21B39C3F8006358F4 /* Supporting Files */,
-				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 			);
 			path = MCS;
 			sourceTree = "<group>";
@@ -166,6 +177,18 @@
 				95F9C0CC1B39C3F8006358F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		999903DC1B4329B200F0BF28 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				999903DA1B4329AC00F0BF28 /* Reflection.swift */,
+				999903D81B4329AC00F0BF28 /* Problem.swift */,
+				999903D61B4329AC00F0BF28 /* Plan.swift */,
+				999903D41B4329AC00F0BF28 /* Goal.swift */,
+				999903D21B4329AB00F0BF28 /* Step.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				954930D71B3CD8EC004C62A8 /* CustomPageViewController.swift in Sources */,
+				999903D31B4329AB00F0BF28 /* Step.swift in Sources */,
 				954930CF1B3C6E22004C62A8 /* ImagesColor.swift in Sources */,
 				95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */,
 				954930DD1B3CDD3D004C62A8 /* ViewController.swift in Sources */,
@@ -280,11 +304,15 @@
 				954930D31B3CD738004C62A8 /* BWWalkthroughPageViewController.swift in Sources */,
 				9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */,
 				95AA57961B431EE200767121 /* GoalsViewController.swift in Sources */,
+				999903D51B4329AC00F0BF28 /* Goal.swift in Sources */,
 				99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */,
 				95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */,
 				95AA57941B431ED700767121 /* PlanViewController.swift in Sources */,
+				999903D91B4329AC00F0BF28 /* Problem.swift in Sources */,
+				999903D71B4329AC00F0BF28 /* Plan.swift in Sources */,
 				954930D51B3CD7D8004C62A8 /* BWWalkthroughViewController.swift in Sources */,
 				95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */,
+				999903DB1B4329AC00F0BF28 /* Reflection.swift in Sources */,
 				95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

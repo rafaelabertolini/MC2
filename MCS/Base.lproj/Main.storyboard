@@ -449,7 +449,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quantidade que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
-                                        <rect key="frame" x="46" y="358" width="279" height="29"/>
+                                        <rect key="frame" x="46" y="358" width="278.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="l5r-vU-C9J"/>
                                         </constraints>
@@ -457,16 +457,16 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I08-QI-DNm">
-                                        <rect key="frame" x="46" y="394" width="508" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I08-QI-DNm">
+                                        <rect key="frame" x="46" y="395" width="508" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ksh-dp-UXT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Em:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
-                                        <rect key="frame" x="46" y="444" width="40" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
+                                        <rect key="frame" x="46" y="444" width="39.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="0Bh-Ka-R5a"/>
                                         </constraints>
@@ -474,17 +474,17 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView tag="100" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDi-eD-0kL">
+                                    <pickerView tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDi-eD-0kL">
                                         <rect key="frame" x="0.0" y="481" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="Xcv-em-1Gg"/>
                                         </constraints>
                                     </pickerView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-3A-0pT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-3A-0pT">
                                         <rect key="frame" x="20" y="663" width="560" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quando?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-J0-Tma">
-                                                <rect key="frame" x="20" y="0.0" width="94" height="52"/>
+                                                <rect key="frame" x="20" y="0.0" width="93.5" height="52"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -498,7 +498,7 @@
                                             <constraint firstAttribute="height" secondItem="UGf-J0-Tma" secondAttribute="height" id="dG9-ej-4cu"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A frequencia que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A frequencia que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
                                         <rect key="frame" x="46" y="736" width="271" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="8Nx-d4-oUn"/>
@@ -507,14 +507,14 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView tag="200" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9K-nl-tHv">
+                                    <pickerView tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9K-nl-tHv">
                                         <rect key="frame" x="0.0" y="773" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="VlX-U5-ab5"/>
                                         </constraints>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Por:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
-                                        <rect key="frame" x="46" y="956" width="40" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
+                                        <rect key="frame" x="46" y="956" width="39.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cZf-lT-YBC"/>
                                         </constraints>
@@ -522,13 +522,13 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView tag="300" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
+                                    <pickerView tag="300" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
                                         <rect key="frame" x="0.0" y="985" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="5jK-P5-Ten"/>
                                         </constraints>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
                                         <rect key="frame" x="0.0" y="1168" width="600" height="52"/>
                                         <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -575,7 +575,7 @@
                                     <constraint firstItem="dQq-qh-PGG" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="46" id="hjV-7U-Lcz"/>
                                     <constraint firstItem="b2Z-Mi-B5E" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="20" id="iLg-Gu-LLM"/>
                                     <constraint firstItem="rto-5G-Q9c" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="46" id="if7-wD-9nm"/>
-                                    <constraint firstItem="Qen-XK-NLb" firstAttribute="top" secondItem="I08-QI-DNm" secondAttribute="bottom" constant="20" id="jCc-8o-Gut"/>
+                                    <constraint firstItem="Qen-XK-NLb" firstAttribute="top" secondItem="I08-QI-DNm" secondAttribute="bottom" constant="19" id="jCc-8o-Gut"/>
                                     <constraint firstAttribute="centerX" secondItem="D9K-nl-tHv" secondAttribute="centerX" id="kjA-r3-DHm"/>
                                     <constraint firstItem="I08-QI-DNm" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" constant="46" id="kuk-TV-YAD"/>
                                     <constraint firstItem="OB3-SH-AWS" firstAttribute="leading" secondItem="USC-hu-96y" secondAttribute="leading" id="lGf-mm-x2y"/>
@@ -616,8 +616,10 @@
                         <outlet property="frequenciaPickerView" destination="D9K-nl-tHv" id="BdA-9g-DNo"/>
                         <outlet property="iniciarButton" destination="1cU-4E-3nM" id="hvb-fp-Cf2"/>
                         <outlet property="medidaPickerView" destination="BDi-eD-0kL" id="MIT-yX-cs9"/>
+                        <outlet property="oQueUsoTextField" destination="TO4-1e-edO" id="xPI-H7-jVI"/>
                         <outlet property="oQueView" destination="teA-dJ-Nzn" id="KTT-UQ-ZEu"/>
                         <outlet property="quandoView" destination="z6A-3A-0pT" id="D8d-Oo-2gc"/>
+                        <outlet property="quantoUsoTextField" destination="I08-QI-DNm" id="IYU-AS-3l2"/>
                         <outlet property="quantoView" destination="b2Z-Mi-B5E" id="2Lr-Jk-48b"/>
                         <outlet property="tempoPickerView" destination="Pcy-sM-auU" id="7RP-Px-XNC"/>
                     </connections>

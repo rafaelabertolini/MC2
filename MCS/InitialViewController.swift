@@ -58,7 +58,8 @@ class InitialViewController: UIViewController {
     }
     
     func varrerCoreData(){
-        performSegueWithIdentifier("problema", sender: self)
+        //performSegueWithIdentifier("problema", sender: self)
+        performSegueWithIdentifier("problemaNil", sender: self)
         
     }
     
