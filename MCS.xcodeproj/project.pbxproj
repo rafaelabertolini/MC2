@@ -25,6 +25,7 @@
 		95F9C0CE1B39C3F8006358F4 /* MCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0CD1B39C3F8006358F4 /* MCSTests.swift */; };
 		95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */; };
 		9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */; };
+		999903D11B43235500F0BF28 /* ProsContrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D01B43235500F0BF28 /* ProsContrasViewController.swift */; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		95F9C0CD1B39C3F8006358F4 /* MCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSTests.swift; sourceTree = "<group>"; };
 		95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaPreenchido.swift; sourceTree = "<group>"; };
+		999903D01B43235500F0BF28 /* ProsContrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProsContrasViewController.swift; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				95F9C0C01B39C3F8006358F4 /* LaunchScreen.xib */,
 				95F9C0B61B39C3F8006358F4 /* MCS.xcdatamodeld */,
 				95F9C0B21B39C3F8006358F4 /* Supporting Files */,
+				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 			);
 			path = MCS;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */,
 				954930DD1B3CDD3D004C62A8 /* ViewController.swift in Sources */,
 				95F9C0B51B39C3F8006358F4 /* AppDelegate.swift in Sources */,
+				999903D11B43235500F0BF28 /* ProsContrasViewController.swift in Sources */,
 				954930D31B3CD738004C62A8 /* BWWalkthroughPageViewController.swift in Sources */,
 				9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */,
 				99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */,
