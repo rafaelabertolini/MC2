@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "SeuplanoBloqueado.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
@@ -13,7 +12,7 @@
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "SeuplanoBloqueado@3x.png"
+      "filename" : "SeuplanoBloqueado.png"
     }
   ],
   "info" : {
