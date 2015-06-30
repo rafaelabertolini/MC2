@@ -103,7 +103,7 @@
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="prosContrasAction:" destination="ziz-aQ-Xsk" eventType="touchUpInside" id="wnT-cY-aZy"/>
-                                                                    <segue destination="33L-7d-ZBh" kind="show" id="ZwW-Sv-KZ4"/>
+                                                                    <segue destination="Cn4-pl-0jq" kind="show" id="uaT-Wc-E3D"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -280,7 +280,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4c-N6-s2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="975"/>
+            <point key="canvasLocation" x="1233" y="1103"/>
+        </scene>
+        <!--Pros Contras View Controller-->
+        <scene sceneID="kZn-7V-1bM">
+            <objects>
+                <viewController id="Cn4-pl-0jq" customClass="prosContrasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hfq-iy-FFM"/>
+                        <viewControllerLayoutGuide type="bottom" id="LZH-ZR-fOY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JhH-iW-uHV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-jj-q3a">
+                                <rect key="frame" x="0.0" y="64" width="600" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="akt-Pq-SRn">
+                                        <rect key="frame" x="0.0" y="6" width="600" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="chH-lD-cYZ"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Prós"/>
+                                            <segment title="Contras"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="akt-Pq-SRn" firstAttribute="width" secondItem="H1o-jj-q3a" secondAttribute="width" id="Aqw-NH-26D"/>
+                                    <constraint firstAttribute="centerX" secondItem="akt-Pq-SRn" secondAttribute="centerX" id="Hi1-hx-TDY"/>
+                                    <constraint firstAttribute="height" constant="40" id="SgY-oa-ra8"/>
+                                    <constraint firstAttribute="centerY" secondItem="akt-Pq-SRn" secondAttribute="centerY" id="xNf-5D-2II"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A4K-FZ-w32">
+                                <rect key="frame" x="0.0" y="104" width="600" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="H1o-jj-q3a" secondAttribute="centerX" id="75Z-rs-hHG"/>
+                            <constraint firstItem="H1o-jj-q3a" firstAttribute="top" secondItem="hfq-iy-FFM" secondAttribute="bottom" id="PlD-L4-Wco"/>
+                            <constraint firstItem="A4K-FZ-w32" firstAttribute="trailing" secondItem="H1o-jj-q3a" secondAttribute="trailing" id="Tzs-TU-5Qj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="A4K-FZ-w32" secondAttribute="bottom" constant="-44" id="eH9-PO-Kz2"/>
+                            <constraint firstItem="H1o-jj-q3a" firstAttribute="width" secondItem="JhH-iW-uHV" secondAttribute="width" id="h5m-S1-v2n"/>
+                            <constraint firstItem="A4K-FZ-w32" firstAttribute="top" secondItem="H1o-jj-q3a" secondAttribute="bottom" id="ngC-Ru-Pnl"/>
+                            <constraint firstItem="A4K-FZ-w32" firstAttribute="leading" secondItem="H1o-jj-q3a" secondAttribute="leading" id="nxx-20-Ak9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agv-Bo-oz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="1901"/>
         </scene>
         <!--Problema View Controller-->
         <scene sceneID="8Rd-RO-jsx">
@@ -557,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgr-Bq-H5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5" y="1802"/>
+            <point key="canvasLocation" x="237" y="1890"/>
         </scene>
         <!--Problema Preenchido-->
         <scene sceneID="iWn-Sf-lso">
@@ -715,7 +770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohb-jz-WPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="1607"/>
+            <point key="canvasLocation" x="193" y="725"/>
         </scene>
         <!--Reflexões-->
         <scene sceneID="9dG-ib-bOu">
@@ -729,43 +784,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-ku-5yQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-AZ-Md4">
-                                        <rect key="frame" x="277" y="496" width="46" height="46"/>
-                                        <state key="normal" backgroundImage="Plus_2_">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addReflection:" destination="tP3-cu-GMg" eventType="touchUpInside" id="fTn-ui-Vzv"/>
-                                        </connections>
-                                    </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-qX-wgr">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="438"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="tP3-cu-GMg" id="8cD-NL-jTh"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-qX-wgr">
+                                <rect key="frame" x="0.0" y="28" width="600" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tP3-cu-GMg" id="8cD-NL-jTh"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-AZ-Md4">
+                                <rect key="frame" x="277" y="489" width="46" height="46"/>
                                 <constraints>
-                                    <constraint firstItem="eAX-AZ-Md4" firstAttribute="top" secondItem="e5Y-qX-wgr" secondAttribute="bottom" constant="58" id="2GD-74-12h"/>
-                                    <constraint firstItem="e5Y-qX-wgr" firstAttribute="leading" secondItem="ZJj-ku-5yQ" secondAttribute="leading" id="Jf7-zk-tCf"/>
-                                    <constraint firstAttribute="bottom" secondItem="eAX-AZ-Md4" secondAttribute="bottom" constant="58" id="QLf-Iy-MzH"/>
-                                    <constraint firstAttribute="trailing" secondItem="e5Y-qX-wgr" secondAttribute="trailing" id="X8v-Mi-38I"/>
-                                    <constraint firstAttribute="centerX" secondItem="eAX-AZ-Md4" secondAttribute="centerX" id="fFH-uy-8d3"/>
-                                    <constraint firstItem="e5Y-qX-wgr" firstAttribute="top" secondItem="ZJj-ku-5yQ" secondAttribute="top" id="j5A-jO-Wkk"/>
+                                    <constraint firstAttribute="width" constant="46" id="Kgo-kN-5Q0"/>
+                                    <constraint firstAttribute="height" constant="46" id="PWM-Ar-SgX"/>
                                 </constraints>
-                            </scrollView>
+                                <state key="normal" backgroundImage="Plus_2_">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addReflection:" destination="tP3-cu-GMg" eventType="touchUpInside" id="fTn-ui-Vzv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="top" secondItem="MQ7-OA-a0i" secondAttribute="topMargin" id="3eK-mr-Gc6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZJj-ku-5yQ" secondAttribute="trailing" constant="-16" id="6kG-ed-f6U"/>
-                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leadingMargin" constant="-16" id="G5j-oD-lOp"/>
-                            <constraint firstItem="ZJj-ku-5yQ" firstAttribute="bottom" secondItem="MQ7-OA-a0i" secondAttribute="bottomMargin" id="oPO-dB-bhG"/>
+                            <constraint firstItem="e5Y-qX-wgr" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leading" id="1wd-60-Odb"/>
+                            <constraint firstItem="e5Y-qX-wgr" firstAttribute="top" secondItem="MQ7-OA-a0i" secondAttribute="top" constant="28" id="6Ny-dI-IHv"/>
+                            <constraint firstItem="eAX-AZ-Md4" firstAttribute="top" secondItem="e5Y-qX-wgr" secondAttribute="bottom" constant="1" id="7x9-HT-Pb6"/>
+                            <constraint firstItem="e5Y-qX-wgr" firstAttribute="centerX" secondItem="eAX-AZ-Md4" secondAttribute="centerX" id="IO1-UX-HHe"/>
+                            <constraint firstItem="eAX-AZ-Md4" firstAttribute="centerX" secondItem="MQ7-OA-a0i" secondAttribute="centerX" id="OIZ-00-CG6"/>
+                            <constraint firstItem="jxB-c7-zVz" firstAttribute="top" secondItem="eAX-AZ-Md4" secondAttribute="bottom" constant="16" id="fwl-Ah-swc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reflexões" image="Lightbulb_1_" id="ljR-Tc-pag"/>
@@ -776,7 +823,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5R-vN-6OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="859"/>
+            <point key="canvasLocation" x="2059" y="355"/>
         </scene>
         <!--Goals View Controller-->
         <scene sceneID="qJG-Kz-Zuk">
@@ -856,57 +903,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLg-3l-3Rh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="859"/>
-        </scene>
-        <!--Pros Contras View Controller-->
-        <scene sceneID="iYx-W8-MjW">
-            <objects>
-                <tableViewController id="33L-7d-ZBh" customClass="prosContrasViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="22" sectionFooterHeight="22" id="fFO-8S-GkD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="sqw-xv-ej0">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kvw-w3-ZrJ">
-                                    <rect key="frame" x="0.0" y="37" width="600" height="29"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="28" id="J0H-pv-omQ"/>
-                                    </constraints>
-                                    <segments>
-                                        <segment title="Prós"/>
-                                        <segment title="Contras"/>
-                                    </segments>
-                                </segmentedControl>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="Kvw-w3-ZrJ" secondAttribute="trailing" id="AwD-Th-L00"/>
-                                <constraint firstAttribute="bottom" secondItem="Kvw-w3-ZrJ" secondAttribute="bottom" constant="9" id="NEq-mp-hFK"/>
-                                <constraint firstItem="Kvw-w3-ZrJ" firstAttribute="leading" secondItem="sqw-xv-ej0" secondAttribute="leading" id="b9i-rj-jJc"/>
-                                <constraint firstAttribute="centerX" secondItem="Kvw-w3-ZrJ" secondAttribute="centerX" id="nPk-Rr-hzf"/>
-                                <constraint firstItem="Kvw-w3-ZrJ" firstAttribute="top" secondItem="sqw-xv-ej0" secondAttribute="top" constant="37" id="xL3-gz-iQj"/>
-                            </constraints>
-                        </view>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="QFY-62-PZn">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QFY-62-PZn" id="beC-wv-MxB">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="33L-7d-ZBh" id="U8G-FP-1HW"/>
-                            <outlet property="delegate" destination="33L-7d-ZBh" id="dmK-nV-c4l"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="svQ-J0-RE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-294" y="2434"/>
+            <point key="canvasLocation" x="2707" y="355"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="Yg6-TX-k84">
@@ -938,7 +935,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOn-DA-7E3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2363" y="859"/>
+            <point key="canvasLocation" x="3379" y="355"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1070,7 +1067,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrs-3w-vI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="227"/>
+            <point key="canvasLocation" x="1233" y="355"/>
         </scene>
     </scenes>
     <resources>
