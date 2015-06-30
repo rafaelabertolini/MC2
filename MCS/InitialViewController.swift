@@ -63,7 +63,7 @@ class InitialViewController: UIViewController {
     }
     
     func pressionarView(){
-        let tapAlert = UIAlertController(title: "Tapped", message: "You just tapped the tap view", preferredStyle: UIAlertControllerStyle.Alert)
+        let tapAlert = UIAlertController(title: "Não Liberado", message: "Por favor siga as etapas em ordem.", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
         self.presentViewController(tapAlert, animated: true, completion: nil)
     }
