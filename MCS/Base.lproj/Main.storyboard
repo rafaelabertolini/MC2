@@ -60,9 +60,6 @@
                                                                 <state key="normal" title="Qual é o problema?">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
-                                                                <connections>
-                                                                    <segue destination="Roa-ky-uwt" kind="show" identifier="problemasNil" id="NXs-U7-RrW"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,10 +90,10 @@
                                                         <rect key="frame" x="33" y="0.0" width="525" height="71"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrósContrasBloqueado" translatesAutoresizingMaskIntoConstraints="NO" id="gyO-r3-eA3">
-                                                                <rect key="frame" x="15" y="3" width="63" height="63"/>
+                                                                <rect key="frame" x="8" y="3" width="63" height="63"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RHO-f1-COe">
-                                                                <rect key="frame" x="92" y="0.0" width="423" height="71"/>
+                                                                <rect key="frame" x="85" y="0.0" width="430" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Prós e Contras">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,7 +108,7 @@
                                                             <constraint firstAttribute="centerY" secondItem="RHO-f1-COe" secondAttribute="centerY" id="7nl-fF-1Iv"/>
                                                             <constraint firstItem="RHO-f1-COe" firstAttribute="leading" secondItem="gyO-r3-eA3" secondAttribute="trailing" constant="14" id="A6t-Ie-MnK"/>
                                                             <constraint firstAttribute="trailing" secondItem="RHO-f1-COe" secondAttribute="trailing" constant="10" id="GGh-1g-OsV"/>
-                                                            <constraint firstItem="gyO-r3-eA3" firstAttribute="leading" secondItem="Md6-5P-CoA" secondAttribute="leading" constant="15" id="JZB-RT-qXU"/>
+                                                            <constraint firstItem="gyO-r3-eA3" firstAttribute="leading" secondItem="Md6-5P-CoA" secondAttribute="leading" constant="8" id="JZB-RT-qXU"/>
                                                             <constraint firstAttribute="centerY" secondItem="gyO-r3-eA3" secondAttribute="centerY" constant="1" id="Ngd-lu-oKf"/>
                                                             <constraint firstItem="RHO-f1-COe" firstAttribute="height" secondItem="Md6-5P-CoA" secondAttribute="height" id="QyR-RV-qoz"/>
                                                         </constraints>
@@ -134,10 +131,10 @@
                                                         <rect key="frame" x="13" y="0.0" width="525" height="71"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeuplanoBloqueado" translatesAutoresizingMaskIntoConstraints="NO" id="3V0-T9-uTG">
-                                                                <rect key="frame" x="9" y="-59" width="189" height="189"/>
+                                                                <rect key="frame" x="8" y="4" width="63" height="63"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="S64-ff-BGb">
-                                                                <rect key="frame" x="212" y="0.0" width="303" height="71"/>
+                                                                <rect key="frame" x="85" y="0.0" width="430" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Seu plano">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,7 +150,7 @@
                                                             <constraint firstAttribute="centerY" secondItem="S64-ff-BGb" secondAttribute="centerY" id="YVP-mr-4Na"/>
                                                             <constraint firstItem="S64-ff-BGb" firstAttribute="leading" secondItem="3V0-T9-uTG" secondAttribute="trailing" constant="14" id="bOl-1E-xJB"/>
                                                             <constraint firstAttribute="centerY" secondItem="3V0-T9-uTG" secondAttribute="centerY" id="rNk-bR-qyu"/>
-                                                            <constraint firstItem="3V0-T9-uTG" firstAttribute="leading" secondItem="pvi-UU-25a" secondAttribute="leading" constant="9" id="sF7-L4-697"/>
+                                                            <constraint firstItem="3V0-T9-uTG" firstAttribute="leading" secondItem="pvi-UU-25a" secondAttribute="leading" constant="8" id="sF7-L4-697"/>
                                                             <constraint firstItem="S64-ff-BGb" firstAttribute="height" secondItem="pvi-UU-25a" secondAttribute="height" id="sXc-D4-3oU"/>
                                                         </constraints>
                                                     </view>
@@ -175,10 +172,10 @@
                                                         <rect key="frame" x="33" y="0.0" width="525" height="71"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MetasBloqueado-1" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-3d-8ym">
-                                                                <rect key="frame" x="15" y="4" width="63" height="63"/>
+                                                                <rect key="frame" x="8" y="4" width="63" height="63"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3Ed-q9-diS">
-                                                                <rect key="frame" x="92" y="0.0" width="423" height="71"/>
+                                                                <rect key="frame" x="85" y="0.0" width="430" height="71"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                                                 <state key="normal" title="Criar meta">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,7 +191,7 @@
                                                             <constraint firstItem="3Ed-q9-diS" firstAttribute="leading" secondItem="xeS-3d-8ym" secondAttribute="trailing" constant="14" id="CVT-E2-wrN"/>
                                                             <constraint firstAttribute="height" constant="71" id="MgU-UX-8f2"/>
                                                             <constraint firstAttribute="trailing" secondItem="3Ed-q9-diS" secondAttribute="trailing" constant="10" id="byG-En-Xcf"/>
-                                                            <constraint firstItem="xeS-3d-8ym" firstAttribute="leading" secondItem="ku4-Di-Byb" secondAttribute="leading" constant="15" id="irG-oc-0W4"/>
+                                                            <constraint firstItem="xeS-3d-8ym" firstAttribute="leading" secondItem="ku4-Di-Byb" secondAttribute="leading" constant="8" id="irG-oc-0W4"/>
                                                             <constraint firstAttribute="centerY" secondItem="xeS-3d-8ym" secondAttribute="centerY" id="vHS-D7-cuP"/>
                                                             <constraint firstItem="3Ed-q9-diS" firstAttribute="height" secondItem="ku4-Di-Byb" secondAttribute="height" id="wRc-SI-WHw"/>
                                                         </constraints>
@@ -272,6 +269,8 @@
                         <outlet property="problemaView" destination="guJ-Ca-5as" id="Y8R-5p-LiQ"/>
                         <outlet property="prosContrasButton" destination="RHO-f1-COe" id="DX4-rq-a2Y"/>
                         <outlet property="prosContrasView" destination="Md6-5P-CoA" id="VBN-Gj-L06"/>
+                        <segue destination="Roa-ky-uwt" kind="show" identifier="problemaNil" id="lvr-OA-RcC"/>
+                        <segue destination="bDY-nA-EFv" kind="show" identifier="problema" id="F6g-PL-toe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4c-N6-s2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,8 +326,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teA-dJ-Nzn">
                                         <rect key="frame" x="20" y="123" width="560" height="52"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2v-ct-XpY">
-                                                <rect key="frame" x="20" y="0.0" width="75.5" height="52"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="O que?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2v-ct-XpY">
+                                                <rect key="frame" x="47" y="0.0" width="76" height="52"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -553,7 +552,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgr-Bq-H5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1035" y="2442"/>
+            <point key="canvasLocation" x="-1288" y="1607"/>
+        </scene>
+        <!--Problema Preenchido-->
+        <scene sceneID="iWn-Sf-lso">
+            <objects>
+                <viewController id="bDY-nA-EFv" customClass="ProblemaPreenchido" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ifU-aF-alV"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGu-W6-bP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tyy-vS-HW4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohb-jz-WPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="1607"/>
         </scene>
         <!--Reflexões-->
         <scene sceneID="9dG-ib-bOu">
@@ -680,8 +697,8 @@
                                     <constraint firstAttribute="width" constant="330" id="UH4-cf-e9i"/>
                                     <constraint firstAttribute="height" constant="205" id="hyc-nL-fzC"/>
                                 </constraints>
-                                <string key="text">Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas estou longe desse mundo há 7 anos. Sei que tens vontade de mudar. Gostaria de te ajudar. Mas por ora só quero saber seu nome. Como posso chamá-lo?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <string key="text">Olá! Gostaria de me apresentar. Meu nome é Rodrigo. Sou um ex-usuário de drogas. Já usei tudo quanto é coisa, mas estou longe desse mundo já há 7 anos. Sei que tens vontade de mudar. Gostaria de te ajudar. Mas por ora só quero saber seu nome. Como posso chamá-lo?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -792,7 +809,7 @@
         <image name="Problema" width="62" height="62"/>
         <image name="ProblemaBloqueado" width="62" height="62"/>
         <image name="PrósContrasBloqueado" width="63" height="63"/>
-        <image name="SeuplanoBloqueado" width="189" height="189"/>
+        <image name="SeuplanoBloqueado" width="63" height="63"/>
         <image name="homem" width="237" height="824"/>
     </resources>
     <color key="tintColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
