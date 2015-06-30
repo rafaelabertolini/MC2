@@ -25,11 +25,11 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var metasButton: UIButton!
     
     @IBAction func problemaAction(sender: UIButton) {
-        pressionarView()
+        varrerCoreData()
     }
     
     @IBAction func prosContrasAction(sender: UIButton) {
-        pressionarView()
+        
     }
     
     
@@ -55,6 +55,11 @@ class InitialViewController: UIViewController {
         
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func varrerCoreData(){
+        performSegueWithIdentifier("problema", sender: self)
+        
     }
     
     func pressionarView(){
