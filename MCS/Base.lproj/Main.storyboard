@@ -558,7 +558,7 @@
         <!--Reflexões-->
         <scene sceneID="9dG-ib-bOu">
             <objects>
-                <viewController id="tP3-cu-GMg" sceneMemberID="viewController">
+                <viewController id="tP3-cu-GMg" customClass="ReflectionsViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r6z-XQ-Hue"/>
                         <viewControllerLayoutGuide type="bottom" id="jxB-c7-zVz"/>
@@ -567,9 +567,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-ku-5yQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-ku-5yQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-AZ-Md4">
+                                        <rect key="frame" x="277" y="496" width="46" height="46"/>
+                                        <state key="normal" backgroundImage="Plus_2_">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addReflection:" destination="tP3-cu-GMg" eventType="touchUpInside" id="fTn-ui-Vzv"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-qX-wgr">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="438"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="tP3-cu-GMg" id="8cD-NL-jTh"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eAX-AZ-Md4" firstAttribute="top" secondItem="e5Y-qX-wgr" secondAttribute="bottom" constant="58" id="2GD-74-12h"/>
+                                    <constraint firstItem="e5Y-qX-wgr" firstAttribute="leading" secondItem="ZJj-ku-5yQ" secondAttribute="leading" id="Jf7-zk-tCf"/>
+                                    <constraint firstAttribute="bottom" secondItem="eAX-AZ-Md4" secondAttribute="bottom" constant="58" id="QLf-Iy-MzH"/>
+                                    <constraint firstAttribute="trailing" secondItem="e5Y-qX-wgr" secondAttribute="trailing" id="X8v-Mi-38I"/>
+                                    <constraint firstAttribute="centerX" secondItem="eAX-AZ-Md4" secondAttribute="centerX" id="fFH-uy-8d3"/>
+                                    <constraint firstItem="e5Y-qX-wgr" firstAttribute="top" secondItem="ZJj-ku-5yQ" secondAttribute="top" id="j5A-jO-Wkk"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -582,6 +608,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Reflexões" image="Lightbulb_1_" id="ljR-Tc-pag"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="e5Y-qX-wgr" id="Qo2-zx-45A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5R-vN-6OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -790,6 +819,7 @@
         <image name="Info" width="27" height="31"/>
         <image name="Lightbulb_1_" width="22" height="32"/>
         <image name="MetasBloqueado-1" width="63" height="63"/>
+        <image name="Plus_2_" width="55" height="55"/>
         <image name="Problema" width="62" height="62"/>
         <image name="ProblemaBloqueado" width="62" height="62"/>
         <image name="PrósContrasBloqueado" width="63" height="63"/>

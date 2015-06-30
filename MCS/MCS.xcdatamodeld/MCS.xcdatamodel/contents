@@ -4,15 +4,24 @@
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="goal" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="History" syncable="YES"/>
     <entity name="Plan" syncable="YES"/>
-    <entity name="Reflections" syncable="YES">
-        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Problem" syncable="YES"/>
+    <entity name="ProsAndCons" syncable="YES"/>
+    <entity name="Reflection" syncable="YES">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Step" syncable="YES">
+        <attribute name="step1" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="step2" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="step3" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="step4" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Reflections" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="Reflection" positionX="-54" positionY="-9" width="128" height="60"/>
         <element name="Goals" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="Plan" positionX="-18" positionY="27" width="128" height="45"/>
-        <element name="History" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="Step" positionX="0" positionY="45" width="128" height="105"/>
+        <element name="Problem" positionX="18" positionY="90" width="128" height="45"/>
+        <element name="ProsAndCons" positionX="36" positionY="99" width="128" height="45"/>
     </elements>
 </model>

@@ -15,6 +15,7 @@
 		954930DD1B3CDD3D004C62A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954930DC1B3CDD3D004C62A8 /* ViewController.swift */; };
 		954930E61B3DB3D4004C62A8 /* rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 954930E41B3DB3D4004C62A8 /* rightarrow@2x.png */; };
 		954930E71B3DB3D4004C62A8 /* leftarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 954930E51B3DB3D4004C62A8 /* leftarrow@2x.png */; };
+		95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57911B4307A900767121 /* ReflectionsViewController.swift */; };
 		95F9C0B51B39C3F8006358F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */; };
 		95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B61B39C3F8006358F4 /* MCS.xcdatamodeld */; };
 		95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */; };
@@ -45,6 +46,7 @@
 		954930DC1B3CDD3D004C62A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		954930E41B3DB3D4004C62A8 /* rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightarrow@2x.png"; sourceTree = "<group>"; };
 		954930E51B3DB3D4004C62A8 /* leftarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftarrow@2x.png"; sourceTree = "<group>"; };
+		95AA57911B4307A900767121 /* ReflectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectionsViewController.swift; sourceTree = "<group>"; };
 		95F9C0AF1B39C3F8006358F4 /* MCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F9C0B31B39C3F8006358F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
 				99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */,
+				95AA57911B4307A900767121 /* ReflectionsViewController.swift */,
 				954930DA1B3CDB3F004C62A8 /* Walkthrough.storyboard */,
 				95F9C0BB1B39C3F8006358F4 /* Main.storyboard */,
 				95F9C0BE1B39C3F8006358F4 /* Images.xcassets */,
@@ -266,6 +269,7 @@
 				95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */,
 				954930D51B3CD7D8004C62A8 /* BWWalkthroughViewController.swift in Sources */,
 				95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */,
+				95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
