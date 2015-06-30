@@ -284,7 +284,7 @@
         <!--Pros Contras View Controller-->
         <scene sceneID="kZn-7V-1bM">
             <objects>
-                <viewController id="Cn4-pl-0jq" customClass="prosContrasViewController" sceneMemberID="viewController">
+                <viewController id="Cn4-pl-0jq" customClass="ProsContrasViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hfq-iy-FFM"/>
                         <viewControllerLayoutGuide type="bottom" id="LZH-ZR-fOY"/>
@@ -318,6 +318,18 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A4K-FZ-w32">
                                 <rect key="frame" x="0.0" y="104" width="600" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Qmt-w7-O6H">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qmt-w7-O6H" id="Yhj-Xi-bX5">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cn4-pl-0jq" id="zUI-W1-MJJ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
