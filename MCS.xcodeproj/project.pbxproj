@@ -126,8 +126,9 @@
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
-				99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */,
 				95AA57911B4307A900767121 /* ReflectionsViewController.swift */,
+				99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */,
+				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 				95AA57931B431ED700767121 /* PlanViewController.swift */,
 				95AA57951B431EE200767121 /* GoalsViewController.swift */,
 				954930DA1B3CDB3F004C62A8 /* Walkthrough.storyboard */,
@@ -138,7 +139,6 @@
 				95F9C0C01B39C3F8006358F4 /* LaunchScreen.xib */,
 				95F9C0B61B39C3F8006358F4 /* MCS.xcdatamodeld */,
 				95F9C0B21B39C3F8006358F4 /* Supporting Files */,
-				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 			);
 			path = MCS;
 			sourceTree = "<group>";
