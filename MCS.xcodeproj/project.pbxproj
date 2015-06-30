@@ -25,6 +25,7 @@
 		95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */; };
 		9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
+		99F3E3531B431167002AC53E /* prosContrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3E3521B431167002AC53E /* prosContrasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaPreenchido.swift; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
+		99F3E3521B431167002AC53E /* prosContrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prosContrasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
+				99F3E3521B431167002AC53E /* prosContrasViewController.swift */,
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
@@ -270,6 +273,7 @@
 				95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */,
 				954930D51B3CD7D8004C62A8 /* BWWalkthroughViewController.swift in Sources */,
 				95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */,
+				99F3E3531B431167002AC53E /* prosContrasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

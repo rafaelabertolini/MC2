@@ -66,6 +66,11 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        oQueView.layer.cornerRadius = 25
+        quantoView.layer.cornerRadius = 25
+        quandoView.layer.cornerRadius = 25
+        
         medidaPickerView.dataSource = self
         medidaPickerView.delegate = self
         
@@ -80,8 +85,5 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBar.hidden = false
-        oQueView.layer.cornerRadius = 25
-        quantoView.layer.cornerRadius = 25
-        quandoView.layer.cornerRadius = 25
     }
 }
