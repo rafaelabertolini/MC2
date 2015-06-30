@@ -8,10 +8,12 @@
 
 import UIKit
 
-class prosContrasViewController: UITableViewController {
+class prosContrasViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBar.hidden = false
+        super.viewWillAppear(animated)
+//        self.navigationController?.navigationBar.hidden = false
+        self.navigationController?.setNavigationBarHidden = false
     }
     
 }
