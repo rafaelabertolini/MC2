@@ -448,8 +448,8 @@
                                             <constraint firstAttribute="height" constant="52" id="i4a-cV-OqI"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quantidade que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
-                                        <rect key="frame" x="46" y="358" width="279" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A quantia que eu uso por vez é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
+                                        <rect key="frame" x="46" y="358" width="319" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="l5r-vU-C9J"/>
                                         </constraints>
@@ -465,8 +465,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
-                                        <rect key="frame" x="46" y="444" width="40" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Unidade:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
+                                        <rect key="frame" x="46" y="444" width="90.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="0Bh-Ka-R5a"/>
                                         </constraints>
@@ -513,8 +513,8 @@
                                             <constraint firstAttribute="height" constant="162" id="VlX-U5-ab5"/>
                                         </constraints>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
-                                        <rect key="frame" x="46" y="956" width="40" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Frequência:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
+                                        <rect key="frame" x="46" y="956" width="117" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cZf-lT-YBC"/>
                                         </constraints>
