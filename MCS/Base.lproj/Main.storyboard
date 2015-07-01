@@ -886,7 +886,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5oL-qc-4Kf">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="av4-sR-iXk">
+                        <barButtonItem key="rightBarButtonItem" title="Nova" id="av4-sR-iXk">
                             <connections>
                                 <action selector="addGoal:" destination="pBj-Gk-blr" id="Ycb-gT-e8D"/>
                             </connections>
