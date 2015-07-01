@@ -962,7 +962,7 @@
         <!--Configurações-->
         <scene sceneID="zbE-GH-1LW">
             <objects>
-                <viewController id="rwS-CB-byM" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="rwS-CB-byM" customClass="SettingsViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0yk-oS-gqe"/>
                         <viewControllerLayoutGuide type="bottom" id="B91-N0-eLa"/>
@@ -1003,8 +1003,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="rwS-CB-byM" id="BxY-6n-ujR"/>
-                                    <outlet property="delegate" destination="rwS-CB-byM" id="kM9-Yd-OOI"/>
+                                    <outlet property="dataSource" destination="rwS-CB-byM" id="54v-3q-fD8"/>
+                                    <outlet property="delegate" destination="rwS-CB-byM" id="5nJ-Kj-keZ"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1018,7 +1018,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="Gear_2_" id="2Q4-eo-Lhd"/>
                     <connections>
-                        <outlet property="tableView" destination="2H6-iA-l5g" id="cCb-sx-Eav"/>
+                        <outlet property="tableView" destination="2H6-iA-l5g" id="vtr-do-xWi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOj-x8-rb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
