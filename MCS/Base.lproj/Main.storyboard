@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agv-Bo-oz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="1901"/>
+            <point key="canvasLocation" x="2249" y="2349"/>
         </scene>
         <!--Problema View Controller-->
         <scene sceneID="8Rd-RO-jsx">
@@ -358,11 +358,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xyF-TO-OU6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xol-3o-WGG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USC-hu-96y">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1551"/>
                                 <subviews>
                                     <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB3-SH-AWS">
                                         <rect key="frame" x="0.0" y="20" width="600" height="83"/>
@@ -539,6 +539,9 @@
                                         <state key="normal" title="Salvar">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pressionaSalvar:" destination="Roa-ky-uwt" eventType="touchUpInside" id="YiE-eq-E2z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -612,6 +615,8 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4lz-du-EDh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1600"/>
                     <connections>
                         <outlet property="frequenciaPickerView" destination="D9K-nl-tHv" id="BdA-9g-DNo"/>
                         <outlet property="iniciarButton" destination="1cU-4E-3nM" id="hvb-fp-Cf2"/>
@@ -626,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgr-Bq-H5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="1890"/>
+            <point key="canvasLocation" x="69" y="2106"/>
         </scene>
         <!--Problema Preenchido-->
         <scene sceneID="iWn-Sf-lso">
@@ -784,7 +789,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohb-jz-WPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="725"/>
+            <point key="canvasLocation" x="-87" y="1037"/>
         </scene>
         <!--Reflexões-->
         <scene sceneID="9dG-ib-bOu">
@@ -885,7 +890,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dtr-lU-MAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="1607"/>
+            <point key="canvasLocation" x="1227" y="2207"/>
         </scene>
         <!--Recursos-->
         <scene sceneID="eRk-M3-MY7">

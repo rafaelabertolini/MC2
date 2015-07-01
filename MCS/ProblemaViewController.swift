@@ -42,6 +42,10 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     var vezes = ""
     
+    @IBAction func pressionaSalvar(sender: UIButton) {
+        self.salvarProblema()
+    }
+    
     //MARK: - Delegates and data sources
     //MARK: Data Sources
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -121,6 +125,15 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         problem.medidafreq = medidaF
         problem.medidaqtd = medidaQ
         problem.quanto = quantoUsoTextField.text.toInt()!
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        } else {
+            print("Não deu erro ao salvar")
+            self.navigationController?.popViewControllerAnimated(true)
+            
+        }
         
         
         /* let entity =  NSEntityDescription.entityForName("Reflection",    inManagedObjectContext:    managedContext)
