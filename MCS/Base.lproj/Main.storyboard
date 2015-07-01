@@ -358,11 +358,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xyF-TO-OU6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xol-3o-WGG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USC-hu-96y">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1951"/>
                                 <subviews>
                                     <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB3-SH-AWS">
                                         <rect key="frame" x="0.0" y="20" width="600" height="83"/>
@@ -413,12 +413,12 @@
                                             <constraint firstItem="W2v-ct-XpY" firstAttribute="leading" secondItem="teA-dJ-Nzn" secondAttribute="leading" constant="20" id="wbK-te-tWH"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eu venho usando:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rto-5G-Q9c">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Eu venho usando:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rto-5G-Q9c">
                                         <rect key="frame" x="46" y="196" width="182" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="4cw-bR-VSw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -453,7 +453,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="l5r-vU-C9J"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -470,7 +470,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="0Bh-Ka-R5a"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -498,12 +498,12 @@
                                             <constraint firstAttribute="height" secondItem="UGf-J0-Tma" secondAttribute="height" id="dG9-ej-4cu"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A frequencia que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
-                                        <rect key="frame" x="46" y="736" width="271" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="O número de vezes que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
+                                        <rect key="frame" x="46" y="736" width="342" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="8Nx-d4-oUn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -518,18 +518,18 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cZf-lT-YBC"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView tag="300" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
-                                        <rect key="frame" x="0.0" y="985" width="600" height="162"/>
+                                    <pickerView tag="300" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
+                                        <rect key="frame" x="0.0" y="993" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="5jK-P5-Ten"/>
                                         </constraints>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
-                                        <rect key="frame" x="0.0" y="1168" width="600" height="52"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
+                                        <rect key="frame" x="0.0" y="1176" width="600" height="52"/>
                                         <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="ZrV-sx-cJv"/>
@@ -615,6 +615,8 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4lz-du-EDh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="2000"/>
                     <connections>
                         <outlet property="frequenciaPickerView" destination="D9K-nl-tHv" id="BdA-9g-DNo"/>
                         <outlet property="iniciarButton" destination="1cU-4E-3nM" id="hvb-fp-Cf2"/>
@@ -629,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgr-Bq-H5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="2106"/>
+            <point key="canvasLocation" x="9" y="2102"/>
         </scene>
         <!--Problema Preenchido-->
         <scene sceneID="iWn-Sf-lso">
