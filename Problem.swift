@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+@objc(Problem)
 class Problem: NSManagedObject {
 
     @NSManaged var frequencia: String
