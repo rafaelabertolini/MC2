@@ -10,8 +10,8 @@ import UIKit
 
 class CustomTabBarController: UITabBarController {
 
-    var tintColor = (UIApplication.sharedApplication().delegate as! AppDelegate).tintColor
-    var selectedTintColor = (UIApplication.sharedApplication().delegate as! AppDelegate).selectedTintColor
+    var tintColor = (UIApplication.sharedApplication().delegate as! AppDelegate).selectedTintColor
+    var selectedTintColor = (UIApplication.sharedApplication().delegate as! AppDelegate).tintColor
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
