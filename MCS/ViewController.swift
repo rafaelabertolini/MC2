@@ -103,7 +103,7 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "tutorialSegue"){
-            print("hueheuheuhheu")
+            
         }
     }
     
