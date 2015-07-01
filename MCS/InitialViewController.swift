@@ -29,10 +29,11 @@ class InitialViewController: UIViewController {
     
     @IBAction func problemaAction(sender: UIButton) {
         varrerCoreData()
+        testarDados("Problem")
     }
     
     @IBAction func prosContrasAction(sender: UIButton) {
-        
+        pressionarView()
     }
     
     
@@ -60,6 +61,34 @@ class InitialViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func testarDados(entidade: String){
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedObjectContext: NSManagedObjectContext! = appDelegate.managedObjectContext
+        
+        var err: NSErrorPointer = nil
+        
+        
+        // Create the fetch request
+        var fetchRequest = NSFetchRequest(entityName: entidade)
+        
+        
+        var arrayDados: NSArray! = managedObjectContext.executeFetchRequest(fetchRequest, error: err)
+        /*for index in 0..<arrayDados.count{
+            if(entidade == "Problem"){
+               let dado = arrayDados[index] as! Problem
+            }
+            
+            //dados.append(dado)
+        }*/
+        
+        if(arrayDados.count > 0){
+            print("Tem Algo")
+        } else {
+            print("Não tem")
+        }
+    }
+    
     func varrerCoreData(){
             
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -85,7 +114,6 @@ class InitialViewController: UIViewController {
         } else {
             performSegueWithIdentifier("problemaNil", sender: self)
         }
-        //
         
     }
     

@@ -36,7 +36,9 @@
 		999903E01B445B9E00F0BF28 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903DF1B445B9E00F0BF28 /* Reflection.swift */; };
 		999903E21B445B9E00F0BF28 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E11B445B9E00F0BF28 /* Goal.swift */; };
 		999903E41B445B9E00F0BF28 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E31B445B9E00F0BF28 /* Problem.swift */; };
-		999903E61B445B9E00F0BF28 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E51B445B9E00F0BF28 /* Step.swift */; };
+		999903E81B4474EE00F0BF28 /* StepFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E71B4474EE00F0BF28 /* StepFour.swift */; };
+		999903EA1B4474EF00F0BF28 /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E91B4474EF00F0BF28 /* StepTwo.swift */; };
+		999903EC1B4474EF00F0BF28 /* StepThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903EB1B4474EF00F0BF28 /* StepThree.swift */; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +86,9 @@
 		999903DF1B445B9E00F0BF28 /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
 		999903E11B445B9E00F0BF28 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		999903E31B445B9E00F0BF28 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
-		999903E51B445B9E00F0BF28 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		999903E71B4474EE00F0BF28 /* StepFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepFour.swift; sourceTree = "<group>"; };
+		999903E91B4474EF00F0BF28 /* StepTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
+		999903EB1B4474EF00F0BF28 /* StepThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepThree.swift; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,7 +198,9 @@
 		999903DC1B4329B200F0BF28 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				999903E51B445B9E00F0BF28 /* Step.swift */,
+				999903EB1B4474EF00F0BF28 /* StepThree.swift */,
+				999903E91B4474EF00F0BF28 /* StepTwo.swift */,
+				999903E71B4474EE00F0BF28 /* StepFour.swift */,
 				999903E31B445B9E00F0BF28 /* Problem.swift */,
 				999903E11B445B9E00F0BF28 /* Goal.swift */,
 				999903DF1B445B9E00F0BF28 /* Reflection.swift */,
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999903DE1B445B9E00F0BF28 /* Plan.swift in Sources */,
+				999903E81B4474EE00F0BF28 /* StepFour.swift in Sources */,
 				954930D71B3CD8EC004C62A8 /* CustomPageViewController.swift in Sources */,
 				954930CF1B3C6E22004C62A8 /* ImagesColor.swift in Sources */,
 				95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */,
@@ -321,13 +328,14 @@
 				9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */,
 				95AA57961B431EE200767121 /* GoalsViewController.swift in Sources */,
 				9507E2281B4468E7000EB782 /* ResourcesViewController.swift in Sources */,
+				999903EA1B4474EF00F0BF28 /* StepTwo.swift in Sources */,
 				99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */,
 				95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */,
 				95AA57941B431ED700767121 /* PlanViewController.swift in Sources */,
 				999903E41B445B9E00F0BF28 /* Problem.swift in Sources */,
 				954930D51B3CD7D8004C62A8 /* BWWalkthroughViewController.swift in Sources */,
 				95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */,
-				999903E61B445B9E00F0BF28 /* Step.swift in Sources */,
+				999903EC1B4474EF00F0BF28 /* StepThree.swift in Sources */,
 				999903E21B445B9E00F0BF28 /* Goal.swift in Sources */,
 				95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */,
 				95B9C3151B446FDD00546C2B /* SettingsViewController.swift in Sources */,

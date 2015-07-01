@@ -19,7 +19,14 @@ class ResourcesViewController: UIViewController, UITableViewDataSource {
     
     
     var recurs: [Recur] = [
-        Recur(name: "Nome")
+        Recur(name: "SENAD - www.senad.gov.br"),
+        Recur(name: "Viva Voz - www.psicoativas.ufcspa.edu.br/vivavoz/"),
+        Recur(name: "OBID - www.obid.senad.gov.br"),
+        Recur(name: "Mundo Jovem - www.obid.senad.gov.br/portais/mundojovem"),
+        Recur(name: "Jovem sem Tabaco - www.obid.senad.gov.br/portais/jovemsemtabaco"),
+        Recur(name: "Ministério da Saúde - www.saude.gov.br"),
+        Recur(name: "CAPS - www.saude.gov.br"),
+        
         
     ]
     
