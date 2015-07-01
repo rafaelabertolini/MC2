@@ -449,7 +449,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quantidade que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
-                                        <rect key="frame" x="46" y="358" width="278.5" height="29"/>
+                                        <rect key="frame" x="46" y="358" width="279" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="l5r-vU-C9J"/>
                                         </constraints>
@@ -466,7 +466,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
-                                        <rect key="frame" x="46" y="444" width="39.5" height="29"/>
+                                        <rect key="frame" x="46" y="444" width="40" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="0Bh-Ka-R5a"/>
                                         </constraints>
@@ -484,7 +484,7 @@
                                         <rect key="frame" x="20" y="663" width="560" height="52"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quando?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-J0-Tma">
-                                                <rect key="frame" x="20" y="0.0" width="93.5" height="52"/>
+                                                <rect key="frame" x="20" y="0.0" width="94" height="52"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -514,7 +514,7 @@
                                         </constraints>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
-                                        <rect key="frame" x="46" y="956" width="39.5" height="21"/>
+                                        <rect key="frame" x="46" y="956" width="40" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cZf-lT-YBC"/>
                                         </constraints>
