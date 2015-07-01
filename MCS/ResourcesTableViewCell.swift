@@ -1,5 +1,5 @@
 //
-//  SettingsTableViewCell.swift
+//  ResourcesTableViewCell.swift
 //  MCS
 //
 //  Created by Rafaela dos Santos Bertolini on 01/07/15.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SettingsTableViewCell: UITableViewCell {
+class ResourcesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var desc: UILabel!
+    @IBOutlet weak var name: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
