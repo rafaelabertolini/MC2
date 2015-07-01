@@ -16,11 +16,14 @@
     <entity name="Reflection" representedClassName="PRODUCT_MODULE_NAME.Reflection" syncable="YES">
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Step" representedClassName="PRODUCT_MODULE_NAME.Step" syncable="YES">
-        <attribute name="step1" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="step2" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="step3" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="step4" optional="YES" attributeType="Boolean" syncable="YES"/>
+    <entity name="StepFour" representedClassName="PRODUCT_MODULE_NAME.StepFour" syncable="YES">
+        <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="StepThree" representedClassName="PRODUCT_MODULE_NAME.StepThree" syncable="YES">
+        <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="StepTwo" representedClassName="PRODUCT_MODULE_NAME.StepTwo" syncable="YES">
+        <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
         <element name="Goal" positionX="-36" positionY="9" width="128" height="75"/>
@@ -28,6 +31,8 @@
         <element name="Problem" positionX="18" positionY="90" width="128" height="120"/>
         <element name="ProsAndCons" positionX="36" positionY="99" width="128" height="45"/>
         <element name="Reflection" positionX="-54" positionY="-9" width="128" height="60"/>
-        <element name="Step" positionX="0" positionY="45" width="128" height="105"/>
+        <element name="StepTwo" positionX="-9" positionY="81" width="128" height="60"/>
+        <element name="StepThree" positionX="0" positionY="90" width="128" height="60"/>
+        <element name="StepFour" positionX="9" positionY="99" width="128" height="60"/>
     </elements>
 </model>
