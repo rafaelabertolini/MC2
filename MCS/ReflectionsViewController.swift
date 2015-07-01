@@ -20,6 +20,9 @@ class ReflectionsViewController: UIViewController {
 
         title = "Reflexões"
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.backgroundColor = UIColor(red: 38/255, green: 87/255, blue: 83/255, alpha: 1.0)
+        
+        tableView.tableFooterView = UIView(frame:CGRectZero)
         
     }
 
@@ -90,6 +93,10 @@ class ReflectionsViewController: UIViewController {
         let cell =  tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         let reflection = notes[indexPath.row]
         cell.textLabel!.text = reflection.valueForKey("note") as! String?
+        
+        cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
+        cell.layer.cornerRadius = 15        
+        
         return cell
     }
     

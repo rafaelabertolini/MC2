@@ -803,15 +803,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-qX-wgr">
-                                <rect key="frame" x="0.0" y="28" width="600" height="460"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="76" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-qX-wgr">
+                                <rect key="frame" x="10" y="28" width="580" height="466"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="80" id="dcH-aB-VRW">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcH-aB-VRW" id="Lb3-9o-7K0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="tP3-cu-GMg" id="8cD-NL-jTh"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-AZ-Md4">
-                                <rect key="frame" x="277" y="489" width="46" height="46"/>
+                                <rect key="frame" x="277" y="495" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Kgo-kN-5Q0"/>
                                     <constraint firstAttribute="height" constant="46" id="PWM-Ar-SgX"/>
@@ -824,14 +833,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="e5Y-qX-wgr" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leading" id="1wd-60-Odb"/>
+                            <constraint firstItem="e5Y-qX-wgr" firstAttribute="leading" secondItem="MQ7-OA-a0i" secondAttribute="leading" constant="10" id="1wd-60-Odb"/>
                             <constraint firstItem="e5Y-qX-wgr" firstAttribute="top" secondItem="MQ7-OA-a0i" secondAttribute="top" constant="28" id="6Ny-dI-IHv"/>
                             <constraint firstItem="eAX-AZ-Md4" firstAttribute="top" secondItem="e5Y-qX-wgr" secondAttribute="bottom" constant="1" id="7x9-HT-Pb6"/>
                             <constraint firstItem="e5Y-qX-wgr" firstAttribute="centerX" secondItem="eAX-AZ-Md4" secondAttribute="centerX" id="IO1-UX-HHe"/>
                             <constraint firstItem="eAX-AZ-Md4" firstAttribute="centerX" secondItem="MQ7-OA-a0i" secondAttribute="centerX" id="OIZ-00-CG6"/>
-                            <constraint firstItem="jxB-c7-zVz" firstAttribute="top" secondItem="eAX-AZ-Md4" secondAttribute="bottom" constant="16" id="fwl-Ah-swc"/>
+                            <constraint firstItem="jxB-c7-zVz" firstAttribute="top" secondItem="eAX-AZ-Md4" secondAttribute="bottom" constant="10" id="fwl-Ah-swc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reflexões" image="Lightbulb_1_" id="ljR-Tc-pag"/>
@@ -937,8 +946,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-iA-l5g">
-                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
+                                <rect key="frame" x="10" y="63" width="580" height="537"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="ebR-rm-BoP" customClass="SettingsTableViewCell" customModule="MCS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -949,7 +959,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ck-hD-C9W">
                                                     <rect key="frame" x="23" y="27" width="266" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwA-2e-0rg">
@@ -972,12 +982,12 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2H6-iA-l5g" secondAttribute="trailing" id="8cd-qk-EID"/>
+                            <constraint firstAttribute="trailing" secondItem="2H6-iA-l5g" secondAttribute="trailing" constant="10" id="8cd-qk-EID"/>
                             <constraint firstItem="2H6-iA-l5g" firstAttribute="top" secondItem="0yk-oS-gqe" secondAttribute="bottom" constant="43" id="POQ-m6-SYl"/>
                             <constraint firstAttribute="bottom" secondItem="2H6-iA-l5g" secondAttribute="bottom" id="YBf-eJ-juS"/>
-                            <constraint firstItem="2H6-iA-l5g" firstAttribute="leading" secondItem="cs2-BH-uks" secondAttribute="leading" id="p6e-YL-pN0"/>
+                            <constraint firstItem="2H6-iA-l5g" firstAttribute="leading" secondItem="cs2-BH-uks" secondAttribute="leading" constant="10" id="p6e-YL-pN0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="Gear_2_" id="2Q4-eo-Lhd"/>
