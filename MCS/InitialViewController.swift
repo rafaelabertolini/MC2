@@ -32,7 +32,7 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func prosContrasAction(sender: UIButton) {
-        
+        pressionarView()
     }
     
     
