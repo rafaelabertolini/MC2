@@ -50,7 +50,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         cell.desc.text = configs[indexPath.row].desc
         
             cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
-        
+            cell.layer.cornerRadius = cell.layer.frame.height/2
+
             return cell
     }
 
