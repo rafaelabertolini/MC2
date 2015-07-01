@@ -1,6 +1,5 @@
-
 //
-//  SettingsViewController.swift
+//  ResourcesViewController.swift
 //  MCS
 //
 //  Created by Rafaela dos Santos Bertolini on 01/07/15.
@@ -9,22 +8,18 @@
 
 import UIKit
 
-struct Config {
-    var title: String
-    var desc: String
+struct Recur {
+    var name: String
 }
 
-class SettingsViewController: UIViewController, UITableViewDataSource {
+class ResourcesViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
     
     
-    var configs: [Config] = [
-        Config(title: "Nome", desc: ""),
-        Config(title: "Fazer Back-up", desc: ""),
-        Config(title: "Notificações Push", desc: ""),
-        Config(title: "Mudar senha", desc: "")
+    var recurs: [Recur] = [
+        Recur(name: "Nome")
         
     ]
     
@@ -42,16 +37,14 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             
-            return configs.count
+            return recurs.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SettingsTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ResourcesTableViewCell
         
-        cell.title.text = configs[indexPath.row].title
-        
-        cell.desc.text = configs[indexPath.row].desc
+        cell.name.text = recurs[indexPath.row].name
         
         cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
         cell.layer.cornerRadius = 15

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class InitialViewController: UIViewController {
 
@@ -23,6 +24,8 @@ class InitialViewController: UIViewController {
     
     @IBOutlet weak var metasView: UIView!
     @IBOutlet weak var metasButton: UIButton!
+    
+    var dataSourceP = [Problem]()
     
     @IBAction func problemaAction(sender: UIButton) {
         varrerCoreData()
@@ -58,8 +61,31 @@ class InitialViewController: UIViewController {
     }
     
     func varrerCoreData(){
-        //performSegueWithIdentifier("problema", sender: self)
-        performSegueWithIdentifier("problemaNil", sender: self)
+            
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedObjectContext: NSManagedObjectContext! = appDelegate.managedObjectContext
+            
+        var err: NSErrorPointer = nil
+            
+            
+        // Create the fetch request
+        var fetchRequest = NSFetchRequest(entityName: "Problem")
+            
+            
+        self.dataSourceP.removeAll()
+            
+        var problems: NSArray! = managedObjectContext.executeFetchRequest(fetchRequest, error: err)
+        for index in 0..<problems.count{
+            let problem = problems[index] as! Problem
+            self.dataSourceP.append(problem)
+        }
+        
+        if(self.dataSourceP.count > 0){
+           performSegueWithIdentifier("problema", sender: self)
+        } else {
+            performSegueWithIdentifier("problemaNil", sender: self)
+        }
+        //
         
     }
     
