@@ -1,3 +1,4 @@
+
 //
 //  SettingsViewController.swift
 //  MCS
@@ -14,15 +15,17 @@ struct Config {
 }
 
 class SettingsViewController: UIViewController, UITableViewDataSource {
-
+    
+    
     @IBOutlet weak var tableView: UITableView!
+    
     
     var configs: [Config] = [
         Config(title: "Nome", desc: ""),
         Config(title: "Fazer Back-up", desc: ""),
         Config(title: "Notificações Push", desc: ""),
         Config(title: "Mudar senha", desc: "")
-
+        
     ]
     
     override func viewDidLoad() {
@@ -42,18 +45,18 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            
-            var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SettingsTableViewCell
-            
-            cell.title.text = configs[indexPath.row].title
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SettingsTableViewCell
+        
+        cell.title.text = configs[indexPath.row].title
         
         cell.desc.text = configs[indexPath.row].desc
         
-            cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
-            cell.layer.cornerRadius = cell.layer.frame.height/2
-
-            return cell
+        cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
+        cell.layer.cornerRadius = cell.layer.frame.height/2
+        
+        return cell
     }
-
-
+    
+    
 }
