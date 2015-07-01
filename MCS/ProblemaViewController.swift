@@ -30,11 +30,11 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var quantoUsoTextField: UITextField!
     
     
-    var pickerData = ["Comprimidos", "Doses/Copos", "Cigarros", "Gramas", "Carreiras", "Pedras"]
+    var pickerData = ["Selecione", "Comprimidos", "Doses/Copos", "Cigarros", "Gramas", "Carreiras", "Pedras"]
     
-    var morePickerData = ["1 vez", "2 vezes", "3 vezes", "4 vezes", "5 vezes", "6 vezes", "7 vezes", "8 vezes", "9 vezes", "10 vezes", "Mais de 10 vezes"]
+    var morePickerData = ["Selecione", "1 vez", "2 vezes", "3 vezes", "4 vezes", "5 vezes", "6 vezes", "7 vezes", "8 vezes", "9 vezes", "10 vezes", "Mais de 10 vezes"]
     
-    var dataPickerData = ["Dia", "Semana", "Mês"]
+    var dataPickerData = ["Selecione", "Dia", "Semana", "Mês"]
     
     var medidaQ = ""
     
@@ -80,10 +80,13 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView.tag == 100){
             medidaQ = pickerData[row]
+            print(medidaQ)
         } else if (pickerView.tag == 200){
             vezes = morePickerData[row]
+            print(vezes)
         } else if (pickerView.tag == 300){
             medidaF = dataPickerData[row]
+            print(medidaF)
         }
         
     }
@@ -114,39 +117,66 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func salvarProblema() {
         
-        let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext!
+        var mensagem = ""
         
-        let entity = NSEntityDescription.entityForName("Problem", inManagedObjectContext: managedContext)
-        let problem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Problem
-        
-        problem.oque = oQueUsoTextField.text
-        problem.frequencia = vezes
-        problem.medidafreq = medidaF
-        problem.medidaqtd = medidaQ
-        problem.quanto = quantoUsoTextField.text.toInt()!
-        
-        var error: NSError?
-        if !managedContext.save(&error) {
-            println("Could not save \(error), \(error?.userInfo)")
+        if(vezes != "" && medidaF != "" && medidaQ != "" && oQueUsoTextField.text != "" && quantoUsoTextField.text != ""){
+            let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext = appDelegate.managedObjectContext!
+            
+            let entity = NSEntityDescription.entityForName("Problem", inManagedObjectContext: managedContext)
+            let problem = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Problem
+            
+            problem.oque = oQueUsoTextField.text
+            problem.frequencia = vezes
+            problem.medidafreq = medidaF
+            problem.medidaqtd = medidaQ
+            
+            if let myNumber = NSNumberFormatter().numberFromString(quantoUsoTextField.text) {
+                var myInt = myNumber.integerValue
+                problem.quanto = myInt
+                var error: NSError?
+                if !managedContext.save(&error) {
+                    println("Could not save \(error), \(error?.userInfo)")
+                    mensagem = "Erro ao salvar!"
+                    
+                } else {
+                    
+                    mensagem = "Salvo!"
+                    print("Não deu erro ao salvar")
+                    self.navigationController?.popViewControllerAnimated(true)
+                }
+                
+            } else {
+                
+                mensagem = "Você deve digitar um número na quantidade!"
+                
+            }
+            
+            //problem.quanto = quantoUsoTextField.text.toInt()!
+
         } else {
-            print("Não deu erro ao salvar")
-            self.navigationController?.popViewControllerAnimated(true)
+            
+            mensagem = "Selecione todos os campos."
             
         }
         
+        var alert = UIAlertController(title: "", message: mensagem, preferredStyle: UIAlertControllerStyle.Alert)
+        //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
         
-        /* let entity =  NSEntityDescription.entityForName("Reflection",    inManagedObjectContext:    managedContext)
-        let reflection = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:managedContext)
-        
-        reflection.setValue(note, forKey: "note")
-        
-        var error: NSError?
-        if !managedContext.save(&error) {
-            println("Could not save \(error), \(error?.userInfo)")
-        }
-        
-        notes.append(reflection) */
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+            switch action.style{
+            case .Default:
+                println("default")
+                
+            case .Cancel:
+                println("cancel")
+                
+            case .Destructive:
+                println("destructive")
+            }
+        }))
+
     }
     
 }

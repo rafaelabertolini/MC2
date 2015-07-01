@@ -121,12 +121,6 @@
 		95F9C0A61B39C3F8006358F4 = {
 			isa = PBXGroup;
 			children = (
-				999903E51B445B9E00F0BF28 /* Step.swift */,
-				999903E31B445B9E00F0BF28 /* Problem.swift */,
-				999903E11B445B9E00F0BF28 /* Goal.swift */,
-				999903DF1B445B9E00F0BF28 /* Reflection.swift */,
-				999903DD1B445B9E00F0BF28 /* Plan.swift */,
-				999903DC1B4329B200F0BF28 /* Entities */,
 				95F9C0B11B39C3F8006358F4 /* MCS */,
 				95F9C0CA1B39C3F8006358F4 /* MCSTests */,
 				95F9C0B01B39C3F8006358F4 /* Products */,
@@ -145,6 +139,7 @@
 		95F9C0B11B39C3F8006358F4 /* MCS */ = {
 			isa = PBXGroup;
 			children = (
+				999903DC1B4329B200F0BF28 /* Entities */,
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
@@ -199,8 +194,14 @@
 		999903DC1B4329B200F0BF28 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				999903E51B445B9E00F0BF28 /* Step.swift */,
+				999903E31B445B9E00F0BF28 /* Problem.swift */,
+				999903E11B445B9E00F0BF28 /* Goal.swift */,
+				999903DF1B445B9E00F0BF28 /* Reflection.swift */,
+				999903DD1B445B9E00F0BF28 /* Plan.swift */,
 			);
 			name = Entities;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

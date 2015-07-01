@@ -358,11 +358,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xyF-TO-OU6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xol-3o-WGG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USC-hu-96y">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="1551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <subviews>
                                     <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OB3-SH-AWS">
                                         <rect key="frame" x="0.0" y="20" width="600" height="83"/>
@@ -615,8 +615,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4lz-du-EDh"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="1600"/>
                     <connections>
                         <outlet property="frequenciaPickerView" destination="D9K-nl-tHv" id="BdA-9g-DNo"/>
                         <outlet property="iniciarButton" destination="1cU-4E-3nM" id="hvb-fp-Cf2"/>
@@ -964,7 +962,7 @@
         <!--Configurações-->
         <scene sceneID="zbE-GH-1LW">
             <objects>
-                <viewController id="rwS-CB-byM" customClass="SettingsViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rwS-CB-byM" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0yk-oS-gqe"/>
                         <viewControllerLayoutGuide type="bottom" id="B91-N0-eLa"/>
