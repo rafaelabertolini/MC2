@@ -448,7 +448,7 @@
                                             <constraint firstAttribute="height" constant="52" id="i4a-cV-OqI"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quantidade que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A quantia que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-tV-97T">
                                         <rect key="frame" x="46" y="358" width="278.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="l5r-vU-C9J"/>
@@ -465,8 +465,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
-                                        <rect key="frame" x="46" y="444" width="39.5" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unidade:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-XK-NLb">
+                                        <rect key="frame" x="46" y="444" width="90.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="0Bh-Ka-R5a"/>
                                         </constraints>
@@ -498,8 +498,8 @@
                                             <constraint firstAttribute="height" secondItem="UGf-J0-Tma" secondAttribute="height" id="dG9-ej-4cu"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A frequencia que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
-                                        <rect key="frame" x="46" y="736" width="271" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A quantidade que eu uso é:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-qh-PGG">
+                                        <rect key="frame" x="46" y="736" width="278.5" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28.5" id="8Nx-d4-oUn"/>
                                         </constraints>
@@ -513,8 +513,8 @@
                                             <constraint firstAttribute="height" constant="162" id="VlX-U5-ab5"/>
                                         </constraints>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
-                                        <rect key="frame" x="46" y="956" width="39.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Frequência:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xf-a0-RBN">
+                                        <rect key="frame" x="46" y="956" width="117" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="cZf-lT-YBC"/>
                                         </constraints>
@@ -522,14 +522,14 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <pickerView tag="300" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
-                                        <rect key="frame" x="0.0" y="985" width="600" height="162"/>
+                                    <pickerView tag="300" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcy-sM-auU">
+                                        <rect key="frame" x="0.0" y="993" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="5jK-P5-Ten"/>
                                         </constraints>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
-                                        <rect key="frame" x="0.0" y="1168" width="600" height="52"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cU-4E-3nM">
+                                        <rect key="frame" x="0.0" y="1176" width="600" height="52"/>
                                         <color key="backgroundColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="ZrV-sx-cJv"/>
@@ -629,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgr-Bq-H5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="2106"/>
+            <point key="canvasLocation" x="9" y="2102"/>
         </scene>
         <!--Problema Preenchido-->
         <scene sceneID="iWn-Sf-lso">
