@@ -122,6 +122,7 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
     }
     
     override func viewWillAppear(animated: Bool) {
+        
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.hidden = false
         
@@ -176,6 +177,10 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
         }
         
         cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
+        
+        cell.textLabel!.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        
+        cell.textLabel!.font = UIFont(name: "Helvetica Neue", size: 20)
         
         return cell
     }
