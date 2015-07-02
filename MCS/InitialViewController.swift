@@ -42,7 +42,8 @@ class InitialViewController: UIViewController {
     
     
     @IBAction func planosAction(sender: UIButton) {
-        pressionarView()
+        performSegueWithIdentifier("planoSegue", sender: self)
+        //pressionarView()
     }
     
     @IBAction func metasAction(sender: UIButton) {
