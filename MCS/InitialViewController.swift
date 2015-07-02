@@ -28,12 +28,16 @@ class InitialViewController: UIViewController {
     var dataSourceP = [Problem]()
     
     @IBAction func problemaAction(sender: UIButton) {
-        varrerCoreData()
-        testarDados("Problem")
+        if(testarDados("Problem")){
+            performSegueWithIdentifier("problema", sender: self)
+        } else {
+            performSegueWithIdentifier("problemaNil", sender: self)
+        }
     }
     
     @IBAction func prosContrasAction(sender: UIButton) {
-        pressionarView()
+        performSegueWithIdentifier("prosContrasSegue", sender: self)
+        //pressionarView()
     }
     
     
@@ -61,7 +65,7 @@ class InitialViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func testarDados(entidade: String){
+    func testarDados(entidade: String) -> Bool{
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedObjectContext: NSManagedObjectContext! = appDelegate.managedObjectContext
@@ -84,8 +88,10 @@ class InitialViewController: UIViewController {
         
         if(arrayDados.count > 0){
             print("Tem Algo")
+            return true;
         } else {
             print("Não tem")
+            return false;
         }
     }
     

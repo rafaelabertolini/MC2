@@ -294,30 +294,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-jj-q3a">
-                                <rect key="frame" x="0.0" y="64" width="600" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-Vt-lse">
+                                <rect key="frame" x="0.0" y="64" width="600" height="113"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="akt-Pq-SRn">
-                                        <rect key="frame" x="0.0" y="6" width="600" height="29"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eNv-3f-Nxf">
+                                        <rect key="frame" x="0.0" y="82" width="600" height="29"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="chH-lD-cYZ"/>
+                                            <constraint firstAttribute="height" constant="28" id="LC7-Np-MH3"/>
                                         </constraints>
                                         <segments>
                                             <segment title="Prós"/>
                                             <segment title="Contras"/>
                                         </segments>
                                     </segmentedControl>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProsContras" translatesAutoresizingMaskIntoConstraints="NO" id="k8A-SQ-9kB">
+                                        <rect key="frame" x="9" y="10" width="63" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="7vW-ay-4xO"/>
+                                            <constraint firstAttribute="width" secondItem="k8A-SQ-9kB" secondAttribute="height" multiplier="1:1" id="o1n-if-ET3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prós e Contras" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9O-OB-kk0">
+                                        <rect key="frame" x="89" y="31" width="149" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="9iz-CD-uS5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="akt-Pq-SRn" firstAttribute="width" secondItem="H1o-jj-q3a" secondAttribute="width" id="Aqw-NH-26D"/>
-                                    <constraint firstAttribute="centerX" secondItem="akt-Pq-SRn" secondAttribute="centerX" id="Hi1-hx-TDY"/>
-                                    <constraint firstAttribute="height" constant="40" id="SgY-oa-ra8"/>
-                                    <constraint firstAttribute="centerY" secondItem="akt-Pq-SRn" secondAttribute="centerY" id="xNf-5D-2II"/>
+                                    <constraint firstAttribute="trailing" secondItem="eNv-3f-Nxf" secondAttribute="trailing" id="0Ul-uY-UHb"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="1R0-qL-o4p"/>
+                                    <constraint firstAttribute="trailing" secondItem="eNv-3f-Nxf" secondAttribute="trailing" id="3ck-QH-EJk"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="40d-y4-D5h"/>
+                                    <constraint firstItem="k8A-SQ-9kB" firstAttribute="top" secondItem="CPc-Vt-lse" secondAttribute="top" constant="10" id="9ff-rj-x1c"/>
+                                    <constraint firstAttribute="height" constant="113" id="DWO-fh-xkw"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="centerX" secondItem="CPc-Vt-lse" secondAttribute="centerX" id="GiP-Sg-2Xw"/>
+                                    <constraint firstItem="u9O-OB-kk0" firstAttribute="leading" secondItem="k8A-SQ-9kB" secondAttribute="trailing" constant="17" id="J04-Fx-o9y"/>
+                                    <constraint firstItem="u9O-OB-kk0" firstAttribute="top" secondItem="CPc-Vt-lse" secondAttribute="top" constant="31" id="RFo-RV-ZvF"/>
+                                    <constraint firstItem="k8A-SQ-9kB" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" constant="9" id="Roa-WY-lki"/>
+                                    <constraint firstAttribute="centerX" secondItem="eNv-3f-Nxf" secondAttribute="centerX" id="TkB-km-RBc"/>
+                                    <constraint firstItem="k8A-SQ-9kB" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" constant="9" id="Whm-TF-mVy"/>
+                                    <constraint firstItem="k8A-SQ-9kB" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" constant="9" id="Zc0-pZ-b3g"/>
+                                    <constraint firstItem="k8A-SQ-9kB" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" constant="9" id="cvd-9a-iNF"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="fav-cg-2Hi"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="muE-eb-zll"/>
+                                    <constraint firstItem="eNv-3f-Nxf" firstAttribute="top" secondItem="k8A-SQ-9kB" secondAttribute="bottom" constant="9" id="oe6-AG-Hha"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="A4K-FZ-w32">
-                                <rect key="frame" x="0.0" y="104" width="600" height="540"/>
+                                <rect key="frame" x="0.0" y="179" width="600" height="372"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Qmt-w7-O6H">
@@ -335,14 +364,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="H1o-jj-q3a" secondAttribute="centerX" id="75Z-rs-hHG"/>
-                            <constraint firstItem="H1o-jj-q3a" firstAttribute="top" secondItem="hfq-iy-FFM" secondAttribute="bottom" id="PlD-L4-Wco"/>
-                            <constraint firstItem="A4K-FZ-w32" firstAttribute="trailing" secondItem="H1o-jj-q3a" secondAttribute="trailing" id="Tzs-TU-5Qj"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="A4K-FZ-w32" secondAttribute="bottom" constant="-44" id="eH9-PO-Kz2"/>
-                            <constraint firstItem="H1o-jj-q3a" firstAttribute="width" secondItem="JhH-iW-uHV" secondAttribute="width" id="h5m-S1-v2n"/>
-                            <constraint firstItem="A4K-FZ-w32" firstAttribute="top" secondItem="H1o-jj-q3a" secondAttribute="bottom" id="ngC-Ru-Pnl"/>
-                            <constraint firstItem="A4K-FZ-w32" firstAttribute="leading" secondItem="H1o-jj-q3a" secondAttribute="leading" id="nxx-20-Ak9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CPc-Vt-lse" secondAttribute="trailing" id="3F3-vd-PH6"/>
+                            <constraint firstItem="LZH-ZR-fOY" firstAttribute="top" secondItem="A4K-FZ-w32" secondAttribute="bottom" id="4Ah-3c-Rce"/>
+                            <constraint firstAttribute="width" secondItem="CPc-Vt-lse" secondAttribute="width" id="9Qk-cJ-N63"/>
+                            <constraint firstItem="CPc-Vt-lse" firstAttribute="leading" secondItem="JhH-iW-uHV" secondAttribute="leadingMargin" id="CM8-sE-Hxa"/>
+                            <constraint firstItem="A4K-FZ-w32" firstAttribute="leading" secondItem="JhH-iW-uHV" secondAttribute="leadingMargin" constant="-16" id="IAp-Me-vac"/>
+                            <constraint firstItem="A4K-FZ-w32" firstAttribute="top" secondItem="CPc-Vt-lse" secondAttribute="bottom" constant="2" id="MUJ-87-vzk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4K-FZ-w32" secondAttribute="trailing" constant="-16" id="Z4L-qX-omr"/>
+                            <constraint firstItem="CPc-Vt-lse" firstAttribute="top" secondItem="hfq-iy-FFM" secondAttribute="bottom" id="gBi-WD-8au"/>
+                            <constraint firstItem="eNv-3f-Nxf" firstAttribute="width" secondItem="JhH-iW-uHV" secondAttribute="width" id="kef-24-fHN"/>
+                            <constraint firstItem="CPc-Vt-lse" firstAttribute="leading" secondItem="JhH-iW-uHV" secondAttribute="leading" id="rWe-sC-fSN"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3F3-vd-PH6"/>
+                                <exclude reference="CM8-sE-Hxa"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agv-Bo-oz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1169,6 +1207,7 @@
         <image name="Plus_2_" width="55" height="55"/>
         <image name="Problema" width="62" height="62"/>
         <image name="ProblemaBloqueado" width="62" height="62"/>
+        <image name="ProsContras" width="63" height="63"/>
         <image name="PrósContrasBloqueado" width="63" height="63"/>
         <image name="SeuplanoBloqueado" width="63" height="63"/>
         <image name="homem" width="237" height="824"/>
