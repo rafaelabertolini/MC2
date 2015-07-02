@@ -47,7 +47,8 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func metasAction(sender: UIButton) {
-        pressionarView()
+       performSegueWithIdentifier("metasSegue", sender: self)
+        // pressionarView()
     }
     
     
