@@ -4,11 +4,11 @@
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="whatProblem" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Goal" representedClassName="PRODUCT_MODULE_NAME.Goal" syncable="YES">
+    <entity name="Goal" representedClassName="Goal" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Plan" representedClassName="PRODUCT_MODULE_NAME.Plan" syncable="YES">
+    <entity name="Plan" representedClassName="Plan" syncable="YES">
         <attribute name="actvAndSit" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mainObj" optional="YES" attributeType="String" syncable="YES"/>
