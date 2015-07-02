@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        UINavigationBar.appearance().barTintColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1)
+        
         UITabBar.appearance().tintColor = tintColor
         
         var tabBarAppearance = UITabBar.appearance()
