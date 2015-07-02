@@ -75,8 +75,11 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        //tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.backgroundColor = UIColor(red: 38/255, green: 87/255, blue: 83/255, alpha: 1.0)
+        
+        tableView.estimatedRowHeight = 95
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.tableFooterView = UIView(frame:CGRectZero)
     }
@@ -168,20 +171,24 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView,  cellForRowAtIndexPath  indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        
+        
+        let textAux = cell.viewWithTag(10) as? UILabel
+        
         if(self.currentEntity == "Pro"){
             let pro = pros[indexPath.row]
-            cell.textLabel!.text = pro.valueForKey("note") as! String?
+            textAux!.text = pro.valueForKey("note") as! String?
         } else if(self.currentEntity == "Con") {
             let con = cons[indexPath.row]
-            cell.textLabel!.text = con.valueForKey("note") as! String?
+            textAux!.text = con.valueForKey("note") as! String?
         }
         
         cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
         
-        cell.textLabel!.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        textAux!.textColor = UIColor(red: 50/255, green: 105/255, blue: 102/255, alpha: 1)
         
-        cell.textLabel!.font = UIFont(name: "Helvetica Neue", size: 20)
-        
+        textAux!.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+                
         return cell
     }
 
