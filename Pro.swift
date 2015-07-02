@@ -9,6 +9,8 @@
 import Foundation
 import CoreData
 
+@objc(Pro)
+
 class Pro: NSManagedObject {
 
     @NSManaged var whatProblem: String

@@ -10,32 +10,59 @@ import UIKit
 import CoreData
 
 class ProsContrasViewController: UIViewController, UITableViewDataSource {
-    
+
     var pros = [Pro]()
     var cons = [Con]()
+    
+    @IBOutlet weak var prosOrConsSegmentedControl: UISegmentedControl!
+    
+    
+    @IBAction func selectedProsOrCons(sender: UISegmentedControl) {
+        switch prosOrConsSegmentedControl.selectedSegmentIndex{
+            case 0:
+                self.populateTable("Pro")
+            break;
+            case 1:
+                self.populateTable("Con")
+            break;
+            default:
+                self.populateTable("Pro")
+            break;
+        }
+    }
     
     @IBAction func addProsCons(sender: UIButton) {
         
         var alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
         
-        let saveProAction = UIAlertAction(title: "Pró", style: .Default) { (action: UIAlertAction!) -> Void in
+        let saveProAction = UIAlertAction(title: "Pró", style: .Default) {
+            (action: UIAlertAction!) -> Void in
             var textField = alert.textFields![0] as! UITextField
             self.savePro(textField.text)
             self.tableView.reloadData()
         }
         
-        let saveConAction = UIAlertAction(title: "Contra", style: .Default) { (action: UIAlertAction!) -> Void in
+        let saveConAction = UIAlertAction(title: "Contra", style: .Default) {
+            (action: UIAlertAction!) -> Void in
             var textField = alert.textFields![0] as! UITextField
             self.saveCon(textField.text)
             self.tableView.reloadData()
         }
         
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .Default) { (action: UIAlertAction!) -> Void in  }
-        alert.addTextFieldWithConfigurationHandler {    (textField: UITextField!) -> Void in  }
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .Default) {
+            (action: UIAlertAction!) -> Void in
+        }
+            
+        alert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField!) -> Void in
+        }
+            
         alert.addAction(saveProAction)
         alert.addAction(saveConAction)
         alert.addAction(cancelAction)
+            
         presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -85,6 +112,10 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
         }
         
         cons.append(con)
+        
+    }
+    
+    func populateTable(entidade: String){
         
     }
     

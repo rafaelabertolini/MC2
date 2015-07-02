@@ -9,6 +9,8 @@
 import Foundation
 import CoreData
 
+@objc(Con)
+
 class Con: NSManagedObject {
 
     @NSManaged var note: String

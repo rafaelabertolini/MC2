@@ -330,6 +330,9 @@
                                             <segment title="Prós"/>
                                             <segment title="Contras"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="selectedProsOrCons:" destination="Cn4-pl-0jq" eventType="valueChanged" id="x8a-6V-t0U"/>
+                                        </connections>
                                     </segmentedControl>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProsContras" translatesAutoresizingMaskIntoConstraints="NO" id="k8A-SQ-9kB">
                                         <rect key="frame" x="9" y="10" width="63" height="63"/>
@@ -423,6 +426,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="prosOrConsSegmentedControl" destination="eNv-3f-Nxf" id="I1t-dI-YML"/>
                         <outlet property="tableView" destination="A4K-FZ-w32" id="W8t-cz-d6V"/>
                     </connections>
                 </viewController>
