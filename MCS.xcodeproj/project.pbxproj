@@ -22,8 +22,6 @@
 		95AA57961B431EE200767121 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57951B431EE200767121 /* GoalsViewController.swift */; };
 		95AA579A1B444DB700767121 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57991B444DB700767121 /* SettingsTableViewCell.swift */; };
 		95B9C3151B446FDD00546C2B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B9C3141B446FDD00546C2B /* SettingsViewController.swift */; };
-		95B9C3171B4597E700546C2B /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B9C3161B4597E700546C2B /* ActivityTableViewCell.swift */; };
-		95B9C3191B4597FA00546C2B /* SituationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B9C3181B4597FA00546C2B /* SituationTableViewCell.swift */; };
 		95F9C0B51B39C3F8006358F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */; };
 		95F9C0B81B39C3F8006358F4 /* MCS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B61B39C3F8006358F4 /* MCS.xcdatamodeld */; };
 		95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */; };
@@ -72,8 +70,6 @@
 		95AA57951B431EE200767121 /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		95AA57991B444DB700767121 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		95B9C3141B446FDD00546C2B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		95B9C3161B4597E700546C2B /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
-		95B9C3181B4597FA00546C2B /* SituationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SituationTableViewCell.swift; sourceTree = "<group>"; };
 		95F9C0AF1B39C3F8006358F4 /* MCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F9C0B31B39C3F8006358F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,8 +165,6 @@
 				95F9C0BE1B39C3F8006358F4 /* Images.xcassets */,
 				9507E2291B446994000EB782 /* ResourcesTableViewCell.swift */,
 				95AA57991B444DB700767121 /* SettingsTableViewCell.swift */,
-				95B9C3161B4597E700546C2B /* ActivityTableViewCell.swift */,
-				95B9C3181B4597FA00546C2B /* SituationTableViewCell.swift */,
 				95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */,
 				954930CE1B3C6E22004C62A8 /* ImagesColor.swift */,
 				95F9C0C01B39C3F8006358F4 /* LaunchScreen.xib */,
@@ -329,7 +323,6 @@
 				999903E81B4474EE00F0BF28 /* StepFour.swift in Sources */,
 				954930D71B3CD8EC004C62A8 /* CustomPageViewController.swift in Sources */,
 				954930CF1B3C6E22004C62A8 /* ImagesColor.swift in Sources */,
-				95B9C3171B4597E700546C2B /* ActivityTableViewCell.swift in Sources */,
 				95F9C0BA1B39C3F8006358F4 /* InitialViewController.swift in Sources */,
 				954930DD1B3CDD3D004C62A8 /* ViewController.swift in Sources */,
 				9507E22A1B446994000EB782 /* ResourcesTableViewCell.swift in Sources */,
@@ -353,7 +346,6 @@
 				999903EC1B4474EF00F0BF28 /* StepThree.swift in Sources */,
 				999903E21B445B9E00F0BF28 /* Goal.swift in Sources */,
 				95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */,
-				95B9C3191B4597FA00546C2B /* SituationTableViewCell.swift in Sources */,
 				95B9C3151B446FDD00546C2B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
