@@ -91,69 +91,69 @@ class PlanViewController: UIViewController {
     
     
     @IBAction func pressActv1(sender: UIButton) {
-        self.act1.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act1.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv2(sender: UIButton) {
-        self.act2.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act2.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv3(sender: UIButton) {
-        self.act3.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act3.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv4(sender: UIButton) {
-        self.act4.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act4.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv5(sender: UIButton) {
-        self.act5.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act5.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv6(sender: UIButton) {
-        self.act6.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.act6.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     
     
     @IBAction func pressSit1(sender: UIButton) {
-        self.sit1.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit1.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
 
     @IBAction func pressSit2(sender: UIButton) {
-        self.sit2.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit2.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit3(sender: UIButton) {
-        self.sit3.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit3.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit4(sender: UIButton) {
-        self.sit4.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit4.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit5(sender: UIButton) {
-        self.sit5.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit5.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit6(sender: UIButton) {
-        self.sit6.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit6.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit7(sender: UIButton) {
-        self.sit7.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit7.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit8(sender: UIButton) {
-        self.sit8.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit8.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit9(sender: UIButton) {
-        self.sit9.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit9.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit10(sender: UIButton) {
-        self.sit10.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
+        self.sit10.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
     }
     
 }
