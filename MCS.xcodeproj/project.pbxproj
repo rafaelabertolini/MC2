@@ -39,6 +39,8 @@
 		999903E81B4474EE00F0BF28 /* StepFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E71B4474EE00F0BF28 /* StepFour.swift */; };
 		999903EA1B4474EF00F0BF28 /* StepTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903E91B4474EF00F0BF28 /* StepTwo.swift */; };
 		999903EC1B4474EF00F0BF28 /* StepThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903EB1B4474EF00F0BF28 /* StepThree.swift */; };
+		999903F61B45743E00F0BF28 /* Con.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903F51B45743E00F0BF28 /* Con.swift */; };
+		999903F81B45743E00F0BF28 /* Pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903F71B45743E00F0BF28 /* Pro.swift */; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		999903E71B4474EE00F0BF28 /* StepFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepFour.swift; sourceTree = "<group>"; };
 		999903E91B4474EF00F0BF28 /* StepTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTwo.swift; sourceTree = "<group>"; };
 		999903EB1B4474EF00F0BF28 /* StepThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepThree.swift; sourceTree = "<group>"; };
+		999903F51B45743E00F0BF28 /* Con.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Con.swift; sourceTree = "<group>"; };
+		999903F71B45743E00F0BF28 /* Pro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pro.swift; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,7 @@
 				999903DC1B4329B200F0BF28 /* Entities */,
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
+				95B9C3141B446FDD00546C2B /* SettingsViewController.swift */,
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
@@ -198,6 +203,8 @@
 		999903DC1B4329B200F0BF28 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				999903F71B45743E00F0BF28 /* Pro.swift */,
+				999903F51B45743E00F0BF28 /* Con.swift */,
 				999903EB1B4474EF00F0BF28 /* StepThree.swift */,
 				999903E91B4474EF00F0BF28 /* StepTwo.swift */,
 				999903E71B4474EE00F0BF28 /* StepFour.swift */,
@@ -326,9 +333,11 @@
 				954930D31B3CD738004C62A8 /* BWWalkthroughPageViewController.swift in Sources */,
 				999903E01B445B9E00F0BF28 /* Reflection.swift in Sources */,
 				9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */,
+				999903F81B45743E00F0BF28 /* Pro.swift in Sources */,
 				95AA57961B431EE200767121 /* GoalsViewController.swift in Sources */,
 				9507E2281B4468E7000EB782 /* ResourcesViewController.swift in Sources */,
 				999903EA1B4474EF00F0BF28 /* StepTwo.swift in Sources */,
+				999903F61B45743E00F0BF28 /* Con.swift in Sources */,
 				99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */,
 				95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */,
 				95AA57941B431ED700767121 /* PlanViewController.swift in Sources */,

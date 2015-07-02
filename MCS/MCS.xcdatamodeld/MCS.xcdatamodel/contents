@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Con" representedClassName="Con" syncable="YES">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="whatProblem" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Goal" representedClassName="PRODUCT_MODULE_NAME.Goal" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Plan" representedClassName="PRODUCT_MODULE_NAME.Plan" syncable="YES"/>
+    <entity name="Pro" representedClassName="Pro" syncable="YES">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="whatProblem" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Problem" representedClassName="Problem" syncable="YES">
         <attribute name="frequencia" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="medidafreq" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,7 +20,6 @@
         <attribute name="oque" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="quanto" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
-    <entity name="ProsAndCons" syncable="YES"/>
     <entity name="Reflection" representedClassName="PRODUCT_MODULE_NAME.Reflection" syncable="YES">
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -29,10 +36,11 @@
         <element name="Goal" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="Plan" positionX="-18" positionY="27" width="128" height="45"/>
         <element name="Problem" positionX="18" positionY="90" width="128" height="120"/>
-        <element name="ProsAndCons" positionX="36" positionY="99" width="128" height="45"/>
         <element name="Reflection" positionX="-54" positionY="-9" width="128" height="60"/>
         <element name="StepTwo" positionX="-9" positionY="81" width="128" height="60"/>
         <element name="StepThree" positionX="0" positionY="90" width="128" height="60"/>
         <element name="StepFour" positionX="9" positionY="99" width="128" height="60"/>
+        <element name="Pro" positionX="9" positionY="108" width="128" height="75"/>
+        <element name="Con" positionX="18" positionY="117" width="128" height="75"/>
     </elements>
 </model>
