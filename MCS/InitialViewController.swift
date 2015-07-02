@@ -47,7 +47,7 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func metasAction(sender: UIButton) {
-        pressionarView()
+        //pressionarView()
     }
     
     
