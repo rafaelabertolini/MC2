@@ -283,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="1233" y="1103"/>
         </scene>
-        <!--View Controller-->
+        <!--Plan View Controller-->
         <scene sceneID="fYj-A5-oay">
             <objects>
-                <viewController id="KQ5-n0-ajb" sceneMemberID="viewController">
+                <viewController id="KQ5-n0-ajb" customClass="PlanViewController" customModule="MCS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UFQ-iV-a3Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Laf-39-7ry"/>
@@ -297,14 +297,36 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pok-D3-203">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-yA-qxn">
+                                        <rect key="frame" x="0.0" y="96" width="600" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Hfh-V7-ryg">
+                                        <rect key="frame" x="-6" y="444" width="606" height="181"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-pp-qCT">
+                                        <rect key="frame" x="0.0" y="243" width="600" height="187"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mainObj" destination="j9R-yA-qxn" id="I8h-Rd-iba"/>
+                        <outlet property="tableView1" destination="Gim-pp-qCT" id="vmK-jq-51s"/>
+                        <outlet property="tableView2" destination="Hfh-V7-ryg" id="I3O-67-5AJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oge-fm-8Om" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="1096"/>
+            <point key="canvasLocation" x="2752" y="1103"/>
         </scene>
         <!--Pros Contras View Controller-->
         <scene sceneID="kZn-7V-1bM">

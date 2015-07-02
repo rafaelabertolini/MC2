@@ -143,7 +143,6 @@
 		95F9C0B11B39C3F8006358F4 /* MCS */ = {
 			isa = PBXGroup;
 			children = (
-				95B9C3141B446FDD00546C2B /* SettingsViewController.swift */,
 				999903DC1B4329B200F0BF28 /* Entities */,
 				954930E81B3DBB60004C62A8 /* Tutorial */,
 				95F9C0B41B39C3F8006358F4 /* AppDelegate.swift */,
@@ -152,6 +151,7 @@
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
 				95AA57911B4307A900767121 /* ReflectionsViewController.swift */,
 				9507E2271B4468E7000EB782 /* ResourcesViewController.swift */,
+				95B9C3141B446FDD00546C2B /* SettingsViewController.swift */,
 				99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */,
 				999903D01B43235500F0BF28 /* ProsContrasViewController.swift */,
 				95AA57931B431ED700767121 /* PlanViewController.swift */,
