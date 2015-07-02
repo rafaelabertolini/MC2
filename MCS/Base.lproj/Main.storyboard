@@ -347,6 +347,19 @@
                                         <color key="textColor" red="0.14901960780000001" green="0.3411764706" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-NJ-ZCa">
+                                        <rect key="frame" x="564" y="31" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="e5p-5E-k41"/>
+                                            <constraint firstAttribute="width" constant="22" id="lpb-91-zn0"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addProsCons:" destination="Cn4-pl-0jq" eventType="touchUpInside" id="3w3-CZ-Pv0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.62038233460000003" green="0.79895926169999998" blue="0.79154964989999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -355,6 +368,7 @@
                                     <constraint firstAttribute="trailing" secondItem="eNv-3f-Nxf" secondAttribute="trailing" id="3ck-QH-EJk"/>
                                     <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="40d-y4-D5h"/>
                                     <constraint firstItem="k8A-SQ-9kB" firstAttribute="top" secondItem="CPc-Vt-lse" secondAttribute="top" constant="10" id="9ff-rj-x1c"/>
+                                    <constraint firstAttribute="trailing" secondItem="rX3-NJ-ZCa" secondAttribute="trailing" constant="14" id="BC1-1S-RHd"/>
                                     <constraint firstAttribute="height" constant="113" id="DWO-fh-xkw"/>
                                     <constraint firstItem="eNv-3f-Nxf" firstAttribute="centerX" secondItem="CPc-Vt-lse" secondAttribute="centerX" id="GiP-Sg-2Xw"/>
                                     <constraint firstItem="u9O-OB-kk0" firstAttribute="leading" secondItem="k8A-SQ-9kB" secondAttribute="trailing" constant="17" id="J04-Fx-o9y"/>
@@ -366,6 +380,7 @@
                                     <constraint firstItem="k8A-SQ-9kB" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" constant="9" id="cvd-9a-iNF"/>
                                     <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="fav-cg-2Hi"/>
                                     <constraint firstItem="eNv-3f-Nxf" firstAttribute="leading" secondItem="CPc-Vt-lse" secondAttribute="leading" id="muE-eb-zll"/>
+                                    <constraint firstItem="rX3-NJ-ZCa" firstAttribute="top" secondItem="CPc-Vt-lse" secondAttribute="top" constant="31" id="nQu-rh-UAm"/>
                                     <constraint firstItem="eNv-3f-Nxf" firstAttribute="top" secondItem="k8A-SQ-9kB" secondAttribute="bottom" constant="9" id="oe6-AG-Hha"/>
                                 </constraints>
                             </view>
@@ -383,6 +398,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Cn4-pl-0jq" id="zUI-W1-MJJ"/>
+                                    <outlet property="delegate" destination="Cn4-pl-0jq" id="W2i-Ps-Da1"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -406,6 +422,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="A4K-FZ-w32" id="W8t-cz-d6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agv-Bo-oz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
