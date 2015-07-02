@@ -87,77 +87,73 @@ class PlanViewController: UIViewController {
         
     }
    
-    
-    func pressButton(){
-    
-        
-    
-    }
+  
     
     
     @IBAction func pressActv1(sender: UIButton) {
-        self.pressButton()
+        self.act1.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv2(sender: UIButton) {
-        self.pressButton()
+        self.act2.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv3(sender: UIButton) {
-        self.pressButton()
+        self.act3.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv4(sender: UIButton) {
-        self.pressButton()
+        self.act4.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv5(sender: UIButton) {
-        self.pressButton()
+        self.act5.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressActv6(sender: UIButton) {
-        self.pressButton()
+        self.act6.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
+    
     
     
     @IBAction func pressSit1(sender: UIButton) {
-        self.pressButton()
+        self.sit1.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
-    
+
     @IBAction func pressSit2(sender: UIButton) {
-        self.pressButton()
+        self.sit2.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit3(sender: UIButton) {
-        self.pressButton()
+        self.sit3.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit4(sender: UIButton) {
-        self.pressButton()
+        self.sit4.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit5(sender: UIButton) {
-        self.pressButton()
+        self.sit5.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit6(sender: UIButton) {
-        self.pressButton()
+        self.sit6.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit7(sender: UIButton) {
-        self.pressButton()
+        self.sit7.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit8(sender: UIButton) {
-        self.pressButton()
+        self.sit8.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit9(sender: UIButton) {
-        self.pressButton()
+        self.sit9.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
     @IBAction func pressSit10(sender: UIButton) {
-        self.pressButton()
+        self.sit10.setImage(UIImage(named: "Plus_2_"), forState: UIControlState.Normal)
     }
     
 }
