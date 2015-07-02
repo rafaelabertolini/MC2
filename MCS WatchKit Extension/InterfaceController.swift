@@ -11,9 +11,16 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    @IBOutlet weak var handAnimation: WKInterfaceImage!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        self.handAnimation.setImageNamed("balanca")
+        
+        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 5), duration: 0.8, repeatCount: 1)
+
         
         // Configure interface objects here.
     }

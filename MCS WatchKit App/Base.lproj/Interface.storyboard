@@ -8,9 +8,21 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MCS_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MCS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="66" alignment="left" id="a3z-wU-2Tw">
+                            <items>
+                                <imageView width="42" height="56" alignment="left" image="balanca0" id="0q5-WY-u0x"/>
+                            </items>
+                            <color key="backgroundColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="handAnimation" destination="0q5-WY-u0x" id="xza-dl-UKd"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="344"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="vVn-ME-Ee4">
