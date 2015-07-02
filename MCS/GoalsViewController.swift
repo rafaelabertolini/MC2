@@ -67,8 +67,11 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
     
     
     //Fetch
-    override func viewWillAppear(animated: Bool) {  super.viewWillAppear(animated)
+    override func viewWillAppear(animated: Bool) {
+
+        super.viewWillAppear(animated)
         
+        self.navigationController?.navigationBar.hidden = false
         let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         

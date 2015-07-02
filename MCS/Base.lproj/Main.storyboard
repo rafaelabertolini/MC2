@@ -185,7 +185,6 @@
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="metasAction:" destination="ziz-aQ-Xsk" eventType="touchUpInside" id="050-78-LxM"/>
-                                                                    <segue destination="pBj-Gk-blr" kind="show" identifier="metasSegue" id="aFg-uh-htE"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -276,6 +275,7 @@
                         <segue destination="Roa-ky-uwt" kind="show" identifier="problemaNil" id="lvr-OA-RcC"/>
                         <segue destination="bDY-nA-EFv" kind="show" identifier="problema" id="F6g-PL-toe"/>
                         <segue destination="Cn4-pl-0jq" kind="show" identifier="prosContrasSegue" id="tVo-9k-GxA"/>
+                        <segue destination="pBj-Gk-blr" kind="show" identifier="metasSegue" id="glw-yH-nCa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4c-N6-s2i" userLabel="First Responder" sceneMemberID="firstResponder"/>

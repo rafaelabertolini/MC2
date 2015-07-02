@@ -33,6 +33,7 @@ class ProblemaPreenchido: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.hidden = false
         self.populaDados()
         self.preencheDados()
