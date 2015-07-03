@@ -12,6 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet weak var nomeLabel: WKInterfaceLabel!
+    
     @IBOutlet weak var handAnimation: WKInterfaceImage!
 
     override func awakeWithContext(context: AnyObject?) {
@@ -19,7 +21,7 @@ class InterfaceController: WKInterfaceController {
         
         self.handAnimation.setImageNamed("balanca")
         
-        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 5), duration: 0.8, repeatCount: 1)
+        self.handAnimation.startAnimatingWithImagesInRange(NSMakeRange(0, 17), duration: 1, repeatCount: 3)
 
         
         // Configure interface objects here.
@@ -28,6 +30,23 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        var request = ["request": "getNome"]
+        WKInterfaceController.openParentApplication(request, reply:{(replyFromParent, error) -> Void in
+            if error != nil{
+                println("tem um erro")
+            }
+            else{
+                println("passou")
+                println(replyFromParent)
+                self.nomeLabel.setText(replyFromParent["replay"]as? String)
+            }
+            
+            
+            
+        })
+
+        
     }
 
     override func didDeactivate() {

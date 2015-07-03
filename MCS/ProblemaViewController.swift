@@ -112,6 +112,8 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBar.hidden = false
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
     }
     
     

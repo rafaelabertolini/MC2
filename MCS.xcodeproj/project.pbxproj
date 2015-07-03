@@ -32,6 +32,7 @@
 		95F9C0C21B39C3F8006358F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F9C0C01B39C3F8006358F4 /* LaunchScreen.xib */; };
 		95F9C0CE1B39C3F8006358F4 /* MCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0CD1B39C3F8006358F4 /* MCSTests.swift */; };
 		95F9C0D81B3C5739006358F4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */; };
+		99185F921B46C937004ECC3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99185F911B46C937004ECC3E /* Images.xcassets */; };
 		9934FFAF1B41D9250061678F /* ProblemaPreenchido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */; };
 		999903D11B43235500F0BF28 /* ProsContrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903D01B43235500F0BF28 /* ProsContrasViewController.swift */; };
 		999903DE1B445B9E00F0BF28 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999903DD1B445B9E00F0BF28 /* Plan.swift */; };
@@ -48,7 +49,6 @@
 		999904071B45C3A400F0BF28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999904061B45C3A400F0BF28 /* Images.xcassets */; };
 		9999040B1B45C3A400F0BF28 /* MCS WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 9999040A1B45C3A400F0BF28 /* MCS WatchKit App.app */; };
 		999904131B45C3A400F0BF28 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999904111B45C3A400F0BF28 /* Interface.storyboard */; };
-		999904151B45C3A400F0BF28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999904141B45C3A400F0BF28 /* Images.xcassets */; };
 		999904181B45C3A400F0BF28 /* MCS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 999903FD1B45C3A400F0BF28 /* MCS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99E0B7EC1B3DD1C7005C9FB6 /* ProblemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */; };
 /* End PBXBuildFile section */
@@ -121,6 +121,7 @@
 		95F9C0CC1B39C3F8006358F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95F9C0CD1B39C3F8006358F4 /* MCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSTests.swift; sourceTree = "<group>"; };
 		95F9C0D71B3C5739006358F4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		99185F911B46C937004ECC3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaPreenchido.swift; sourceTree = "<group>"; };
 		999903D01B43235500F0BF28 /* ProsContrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProsContrasViewController.swift; sourceTree = "<group>"; };
 		999903DD1B445B9E00F0BF28 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
@@ -141,7 +142,6 @@
 		9999040A1B45C3A400F0BF28 /* MCS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MCS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		999904101B45C3A400F0BF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999904121B45C3A400F0BF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		999904141B45C3A400F0BF28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99E0B7EB1B3DD1C7005C9FB6 /* ProblemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,8 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				999904111B45C3A400F0BF28 /* Interface.storyboard */,
-				999904141B45C3A400F0BF28 /* Images.xcassets */,
 				9999040F1B45C3A400F0BF28 /* Supporting Files */,
+				99185F911B46C937004ECC3E /* Images.xcassets */,
 			);
 			path = "MCS WatchKit App";
 			sourceTree = "<group>";
@@ -509,7 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999904131B45C3A400F0BF28 /* Interface.storyboard in Resources */,
-				999904151B45C3A400F0BF28 /* Images.xcassets in Resources */,
+				99185F921B46C937004ECC3E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

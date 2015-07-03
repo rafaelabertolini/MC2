@@ -10,27 +10,40 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MCS_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="66" alignment="left" id="a3z-wU-2Tw">
+                        <group width="1" height="41" alignment="left" id="a3z-wU-2Tw">
                             <items>
-                                <imageView width="42" height="56" alignment="left" image="balanca0" id="0q5-WY-u0x"/>
+                                <imageView width="27" height="27" alignment="left" verticalAlignment="center" image="balanca0" id="0q5-WY-u0x">
+                                    <color key="tintColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label width="38.5" height="42.5" alignment="center" verticalAlignment="center" text="MCS" id="Hpn-Vl-afy"/>
                             </items>
                             <color key="backgroundColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
+                        <label width="102" height="106.5" alignment="center" verticalAlignment="center" text="Atinja suas metas!" textAlignment="center" numberOfLines="0" id="RNS-jt-PJY"/>
                     </items>
                     <connections>
                         <outlet property="handAnimation" destination="0q5-WY-u0x" id="xza-dl-UKd"/>
+                        <outlet property="nomeLabel" destination="RNS-jt-PJY" id="141-AF-0Sk"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="344"/>
+            <point key="canvasLocation" x="220" y="344.25"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="vVn-ME-Ee4">
             <objects>
-                <glanceController id="Apw-t4-GiW">
+                <glanceController bottomTemplateType="groupBody4Footer" id="Apw-t4-GiW">
                     <items>
-                        <group alignment="left" id="C3m-MR-oos"/>
+                        <group alignment="left" id="C3m-MR-oos">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" verticalAlignment="center" image="balanca0" id="39l-hO-4zp"/>
+                                <label alignment="center" verticalAlignment="center" text="MCS" id="ikX-ms-6CR"/>
+                            </items>
+                            <color key="backgroundColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
                         <group alignment="left" id="J2I-AR-ise"/>
+                        <label alignment="left" text="Continue atingindo metas!" id="gEI-2K-hdA"/>
+                        <label alignment="left" id="BPT-8S-DDo"/>
                     </items>
                 </glanceController>
             </objects>
