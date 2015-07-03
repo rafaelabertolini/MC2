@@ -156,6 +156,7 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
                     mensagem = "Salvo!"
                     print("Não deu erro ao salvar")
                     self.navigationController?.popViewControllerAnimated(true)
+                    
                     let entidade = NSEntityDescription.entityForName("StepTwo", inManagedObjectContext: managedContext)
                     
                     let stepTwo = NSManagedObject(entity: entidade!, insertIntoManagedObjectContext: managedContext) as! StepTwo
