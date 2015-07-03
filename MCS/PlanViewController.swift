@@ -63,6 +63,10 @@ class PlanViewController: UIViewController {
 
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = false
+    }
 
    
     @IBAction func pressSave(sender: UIButton){
