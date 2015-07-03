@@ -16,38 +16,56 @@ class PlanViewController: UIViewController {
     
     @IBOutlet weak var mainObj: UITextView!
     
+    @IBOutlet weak var introLabel: UILabel!
+    
+    @IBOutlet weak var secondIntroLabel: UILabel!
+    
     
     @IBOutlet weak var act1: UIButton!
     @IBOutlet weak var actvL1: UILabel!
+    
     @IBOutlet weak var act2: UIButton!
     @IBOutlet weak var actvL2: UILabel!
+    
     @IBOutlet weak var act3: UIButton!
     @IBOutlet weak var actvL3: UILabel!
+    
     @IBOutlet weak var act4: UIButton!
     @IBOutlet weak var actvL4: UILabel!
+    
     @IBOutlet weak var act5: UIButton!
     @IBOutlet weak var actvL5: UILabel!
+    
     @IBOutlet weak var act6: UIButton!
     @IBOutlet weak var actvL6: UILabel!
     
     @IBOutlet weak var sit1: UIButton!
     @IBOutlet weak var sitL1: UILabel!
+    
     @IBOutlet weak var sit2: UIButton!
     @IBOutlet weak var sitL2: UILabel!
+    
     @IBOutlet weak var sit3: UIButton!
     @IBOutlet weak var sitL3: UILabel!
+    
     @IBOutlet weak var sit4: UIButton!
     @IBOutlet weak var sitL4: UILabel!
+    
     @IBOutlet weak var sit5: UIButton!
     @IBOutlet weak var sitL5: UILabel!
+    
     @IBOutlet weak var sit6: UIButton!
     @IBOutlet weak var sitL6: UILabel!
+    
     @IBOutlet weak var sit7: UIButton!
     @IBOutlet weak var sitL7: UILabel!
+    
     @IBOutlet weak var sit8: UIButton!
     @IBOutlet weak var sitL8: UILabel!
+    
     @IBOutlet weak var sit9: UIButton!
     @IBOutlet weak var sitL9: UILabel!
+    
     @IBOutlet weak var sit10: UIButton!
     @IBOutlet weak var sitL10: UILabel!
     
@@ -56,13 +74,17 @@ class PlanViewController: UIViewController {
     var alternatives = [NSManagedObject]()
     var actvs = [String]()
     var sits = [String]()
-
+    var dataSourceP = [Problem]()
+    var droga: String!
+    
     
     override func viewDidLoad() {
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         self.view.addGestureRecognizer(tap)
         super.viewDidLoad()
-
+        self.populaDados()
+        self.introLabel.text = "Eu uso \(self.droga) quando: "
+        self.secondIntroLabel.text = "Nas seguintes situações: "
         
     }
     
@@ -76,6 +98,30 @@ class PlanViewController: UIViewController {
         
         view.endEditing(true)
         
+    }
+    
+    func populaDados(){
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedObjectContext: NSManagedObjectContext! = appDelegate.managedObjectContext
+        
+        var err: NSErrorPointer = nil
+        
+        
+        // Create the fetch request
+        var fetchRequest = NSFetchRequest(entityName: "Problem")
+        
+        
+        self.dataSourceP.removeAll()
+        
+        var problems: NSArray! = managedObjectContext.executeFetchRequest(fetchRequest, error: err)
+        for index in 0..<problems.count{
+            let problem = problems[index] as! Problem
+            self.dataSourceP.append(problem)
+        }
+        if(self.dataSourceP.count > 0){
+            droga = self.dataSourceP[0].oque
+        }
     }
 
    
