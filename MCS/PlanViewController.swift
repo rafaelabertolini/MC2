@@ -52,8 +52,8 @@ class PlanViewController: UIViewController {
     @IBOutlet weak var sitL10: UILabel!
     
     
-    
-    
+    var activities = [NSManagedObject]()
+    var alternatives = [NSManagedObject]()
 
     
     override func viewDidLoad() {
@@ -64,15 +64,62 @@ class PlanViewController: UIViewController {
 
    
     @IBAction func pressSave(sender: UIButton){
-    
+        
+        
+//        self.saveAlternative()
+//        self.saveActvAndSit()
         self.savePlan()
     
     }
     
+    
+    
+    
+    func saveActvAndSit(name: String){
+        
+        
+        let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity =  NSEntityDescription.entityForName("ActvAndSit", inManagedObjectContext:    managedContext)
+        let actvAndSit = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:managedContext) as! ActvAndSit
+        
+        actvAndSit.setValue(name, forKey: "note")
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }
+        
+        activities.append(actvAndSit)
+        
+    }
+    
+    func saveAlternative(note: String){
+        
+        
+        let appDelegate =  UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity =  NSEntityDescription.entityForName("Alternative",    inManagedObjectContext:    managedContext)
+        let alternative = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:managedContext) as! Alternative
+        
+        alternative.setValue(note, forKey: "note")
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }
+        
+        alternatives.append(alternative)
+        
+    }
+
+    
+    
     func savePlan(){
     
         
-        if(mainObj != "" ){
         
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let managedContext = appDelegate.managedObjectContext!
@@ -82,9 +129,10 @@ class PlanViewController: UIViewController {
         
             plan.mainObj = mainObj.text
         
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
         }
-        
-        
     }
    
   

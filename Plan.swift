@@ -12,7 +12,5 @@ import CoreData
 class Plan: NSManagedObject {
 
     @NSManaged var mainObj: String
-    @NSManaged var actvAndSit: String
-    @NSManaged var alternatives: String
     
 }

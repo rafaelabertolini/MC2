@@ -3,7 +3,9 @@
     <entity name="ActvAndSit" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Alternatives" syncable="YES"/>
+    <entity name="Alternative" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Con" representedClassName="Con" syncable="YES">
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="whatProblem" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,8 +15,6 @@
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Plan" representedClassName="Plan" syncable="YES">
-        <attribute name="actvAndSit" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mainObj" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Pro" representedClassName="Pro" syncable="YES">
@@ -41,6 +41,8 @@
         <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
+        <element name="ActvAndSit" positionX="-18" positionY="81" width="128" height="60"/>
+        <element name="Alternative" positionX="-9" positionY="90" width="128" height="60"/>
         <element name="Con" positionX="18" positionY="117" width="128" height="75"/>
         <element name="Goal" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="Plan" positionX="-18" positionY="27" width="128" height="60"/>
@@ -50,7 +52,5 @@
         <element name="StepFour" positionX="9" positionY="99" width="128" height="60"/>
         <element name="StepThree" positionX="0" positionY="90" width="128" height="60"/>
         <element name="StepTwo" positionX="-9" positionY="81" width="128" height="60"/>
-        <element name="ActvAndSit" positionX="-18" positionY="81" width="128" height="60"/>
-        <element name="Alternatives" positionX="-9" positionY="90" width="128" height="45"/>
     </elements>
 </model>
