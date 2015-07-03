@@ -25,7 +25,40 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var metasView: UIView!
     @IBOutlet weak var metasButton: UIButton!
     
+    
+    @IBOutlet weak var stepTwoImageView: UIImageView!
+    
+    @IBOutlet weak var stepThreeImageView: UIImageView!
+    
+    @IBOutlet weak var stepFourImageView: UIImageView!
+    
+    
+    
     var dataSourceP = [Problem]()
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.hidden = true
+        if(testarDados("Problem")){
+            self.stepTwoImageView.image = UIImage(named: "ProsContras")
+        } else {
+            self.stepTwoImageView.image = UIImage(named: "ProsContrasBloqueado")
+        }
+        
+        if(testarDados("Pro") || testarDados("Con")){
+            self.stepThreeImageView.image = UIImage(named: "Plano")
+        } else {
+            self.stepThreeImageView.image = UIImage(named: "SeuplanoBloqueado")
+        }
+        
+        if(testarDados("Plan")){
+            self.stepFourImageView.image = UIImage(named: "Meta")
+        } else {
+            self.stepFourImageView.image = UIImage(named: "MetasBloqueado-1")
+        }
+        
+    }
     
     @IBAction func problemaAction(sender: UIButton) {
         if(testarDados("Problem")){
@@ -36,19 +69,32 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func prosContrasAction(sender: UIButton) {
-        performSegueWithIdentifier("prosContrasSegue", sender: self)
-        //pressionarView()
+        if(testarDados("Problem")){
+            performSegueWithIdentifier("prosContrasSegue", sender: self)
+        } else {
+            pressionarView()
+        }
+        
+        //
     }
     
     
     @IBAction func planosAction(sender: UIButton) {
-        performSegueWithIdentifier("planoSegue", sender: self)
-        //pressionarView()
+        if(testarDados("Pro") || testarDados("Con")){
+            performSegueWithIdentifier("planoSegue", sender: self)
+        } else {
+            pressionarView()
+        }
+        
     }
     
     @IBAction func metasAction(sender: UIButton) {
-       performSegueWithIdentifier("metasSegue", sender: self)
-        // pressionarView()
+        if(testarDados("Plan")){
+            performSegueWithIdentifier("metasSegue", sender: self)
+        } else {
+            pressionarView()
+        }
+       
     }
     
     
@@ -129,10 +175,6 @@ class InitialViewController: UIViewController {
         let tapAlert = UIAlertController(title: "Não Liberado", message: "Por favor siga as etapas em ordem.", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
         self.presentViewController(tapAlert, animated: true, completion: nil)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
