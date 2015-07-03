@@ -59,13 +59,23 @@ class PlanViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
         super.viewDidLoad()
 
         
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.hidden = false
+    }
+    
+    
+    func DismissKeyboard(){
+        
+        view.endEditing(true)
+        
     }
 
    

@@ -29,14 +29,22 @@ class ProblemaPreenchido: UIViewController {
     var dataSourceP = [Problem]()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
         geralView.layer.cornerRadius = 25
+    }
+    
+    
+    func DismissKeyboard(){
+        
+        view.endEditing(true)
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.hidden = false
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-        self.view.addGestureRecognizer(tap)
         self.populaDados()
         self.preencheDados()
         

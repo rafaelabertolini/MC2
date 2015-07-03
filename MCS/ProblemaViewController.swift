@@ -94,6 +94,10 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
+        
         oQueView.layer.cornerRadius = 25
         quantoView.layer.cornerRadius = 25
         quandoView.layer.cornerRadius = 25
@@ -111,9 +115,15 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.hidden = false
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-        self.view.addGestureRecognizer(tap)
+    }
+    
+    
+    func DismissKeyboard(){
+        
+        view.endEditing(true)
+        
     }
     
     
