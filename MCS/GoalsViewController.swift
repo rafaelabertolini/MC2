@@ -96,10 +96,15 @@ class GoalsViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView,  cellForRowAtIndexPath  indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         let reflection = notes[indexPath.row]
+        
         cell.textLabel!.text = reflection.valueForKey("note") as! String?
         
+        
+        cell.textLabel!.textColor = UIColor(red: 50/255, green: 105/255, blue: 102/255, alpha: 1)
+        
+        cell.textLabel!.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+        
         cell.backgroundColor = UIColor(red: 131/255, green: 186/255, blue: 184/255, alpha: 1.0)
-        cell.layer.cornerRadius = 15
         
         return cell
     }

@@ -172,7 +172,6 @@ class ProsContrasViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView,  cellForRowAtIndexPath  indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         
-        
         let textAux = cell.viewWithTag(10) as? UILabel
         
         if(self.currentEntity == "Pro"){
