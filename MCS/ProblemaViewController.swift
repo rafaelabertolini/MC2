@@ -156,6 +156,15 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
                     mensagem = "Salvo!"
                     print("Não deu erro ao salvar")
                     self.navigationController?.popViewControllerAnimated(true)
+                    let entidade = NSEntityDescription.entityForName("StepTwo", inManagedObjectContext: managedContext)
+                    
+                    let stepTwo = NSManagedObject(entity: entidade!, insertIntoManagedObjectContext: managedContext) as! StepTwo
+                    
+                    stepTwo.isUnlocked = true;
+                    
+                    if !managedContext.save(&error) {
+                        println("Could not save \(error), \(error?.userInfo)")
+                    }
                 }
                 
             } else {
@@ -176,7 +185,8 @@ class ProblemaViewController: UIViewController, UIPickerViewDataSource, UIPicker
         //alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: {
+            action in
             switch action.style{
             case .Default:
                 println("default")

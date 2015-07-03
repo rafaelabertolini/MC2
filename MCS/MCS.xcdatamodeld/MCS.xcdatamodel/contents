@@ -37,7 +37,7 @@
     <entity name="StepThree" representedClassName="PRODUCT_MODULE_NAME.StepThree" syncable="YES">
         <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
-    <entity name="StepTwo" representedClassName="PRODUCT_MODULE_NAME.StepTwo" syncable="YES">
+    <entity name="StepTwo" representedClassName="StepTwo" syncable="YES">
         <attribute name="isUnlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
