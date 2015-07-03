@@ -54,15 +54,18 @@ class PlanViewController: UIViewController {
     
     var activities = [NSManagedObject]()
     var alternatives = [NSManagedObject]()
-    var actvs = [String]()
-    var sits = [String]()
+    var actvsAndSits = [String]()
+    var alters = [String]()
+    var name: String!
+
+    @IBOutlet weak var alterTextView: UITextView!
 
     
     override func viewDidLoad() {
+      
         var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         self.view.addGestureRecognizer(tap)
         super.viewDidLoad()
-
         
     }
     
@@ -81,13 +84,39 @@ class PlanViewController: UIViewController {
    
     @IBAction func pressSave(sender: UIButton){
         
-        
-//        self.saveAlternative()
-//        self.saveActvAndSit()
         self.savePlan()
+        
     
     }
+    
+    
+    func selectionsAndAdds() {
+    
+        for var index=0; index < actvsAndSits.count ; index++ {
+            
+          name = actvsAndSits[index]
+          self.saveActvAndSit(name)
+            
+        }
+        
+        for var index=0; index < alters.count ; index++ {
+            
+            name = alters[index]
+            self.saveAlternative(name)
+            
+        }
+        
 
+    }
+    
+    
+    @IBAction func addAlternative(sender: AnyObject) {
+        
+        alters.append(alterTextView.text)
+    
+    }
+    
+  
     
     func saveActvAndSit(name: String){
 
@@ -105,7 +134,7 @@ class PlanViewController: UIViewController {
         }
         
         activities.append(actvAndSit)
-        
+      
     }
     
     
@@ -125,6 +154,7 @@ class PlanViewController: UIViewController {
         }
         
         alternatives.append(alternative)
+    
     }
 
     
@@ -148,86 +178,94 @@ class PlanViewController: UIViewController {
    
     
     
+    //Activities
     @IBAction func pressActv1(sender: UIButton) {
         self.act1.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL1.text!)
+        actvsAndSits.append(actvL1.text!)
     }
     
     @IBAction func pressActv2(sender: UIButton) {
         self.act2.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL2.text!)
+        actvsAndSits.append(actvL2.text!)
     }
     
     @IBAction func pressActv3(sender: UIButton) {
         self.act3.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL3.text!)
+        actvsAndSits.append(actvL3.text!)
     }
     
     @IBAction func pressActv4(sender: UIButton) {
         self.act4.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL1.text!)
+        actvsAndSits.append(actvL1.text!)
     }
     
     @IBAction func pressActv5(sender: UIButton) {
         self.act5.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL5.text!)
+        actvsAndSits.append(actvL5.text!)
     }
     
     @IBAction func pressActv6(sender: UIButton) {
         self.act6.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        actvs.append(actvL6.text!)
+        actvsAndSits.append(actvL6.text!)
     }
     
     
     
+    //Situations
     @IBAction func pressSit1(sender: UIButton) {
         self.sit1.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL1.text!)
+        actvsAndSits.append(sitL1.text!)
     }
 
     @IBAction func pressSit2(sender: UIButton) {
         self.sit2.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL2.text!)
+        actvsAndSits.append(sitL2.text!)
     }
     
     @IBAction func pressSit3(sender: UIButton) {
         self.sit3.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL3.text!)
+        actvsAndSits.append(sitL3.text!)
     }
     
     @IBAction func pressSit4(sender: UIButton) {
         self.sit4.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL4.text!)
+        actvsAndSits.append(sitL4.text!)
     }
     
     @IBAction func pressSit5(sender: UIButton) {
         self.sit5.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL5.text!)
+        actvsAndSits.append(sitL5.text!)
     }
     
     @IBAction func pressSit6(sender: UIButton) {
         self.sit6.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL6.text!)
+        actvsAndSits.append(sitL6.text!)
     }
     
     @IBAction func pressSit7(sender: UIButton) {
         self.sit7.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL7.text!)
+        actvsAndSits.append(sitL7.text!)
     }
     
     @IBAction func pressSit8(sender: UIButton) {
         self.sit8.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL8.text!)
+        actvsAndSits.append(sitL8.text!)
     }
     
     @IBAction func pressSit9(sender: UIButton) {
         self.sit9.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL9.text!)
+        actvsAndSits.append(sitL9.text!)
     }
     
     @IBAction func pressSit10(sender: UIButton) {
         self.sit10.setImage(UIImage(named: "checkedbox"), forState: UIControlState.Normal)
-        sits.append(sitL10.text!)
+        actvsAndSits.append(sitL10.text!)
     }
+    
+    
+    
+    //Alternatives
+    
+    
     
 }

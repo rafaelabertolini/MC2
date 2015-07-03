@@ -17,6 +17,7 @@
 		954930DD1B3CDD3D004C62A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954930DC1B3CDD3D004C62A8 /* ViewController.swift */; };
 		954930E61B3DB3D4004C62A8 /* rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 954930E41B3DB3D4004C62A8 /* rightarrow@2x.png */; };
 		954930E71B3DB3D4004C62A8 /* leftarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 954930E51B3DB3D4004C62A8 /* leftarrow@2x.png */; };
+		959264AD1B46EAE200E168D2 /* PlanoPreenchidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959264AC1B46EAE200E168D2 /* PlanoPreenchidoViewController.swift */; };
 		95AA57921B4307A900767121 /* ReflectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57911B4307A900767121 /* ReflectionsViewController.swift */; };
 		95AA57941B431ED700767121 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57931B431ED700767121 /* PlanViewController.swift */; };
 		95AA57961B431EE200767121 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AA57951B431EE200767121 /* GoalsViewController.swift */; };
@@ -102,6 +103,7 @@
 		954930DC1B3CDD3D004C62A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		954930E41B3DB3D4004C62A8 /* rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightarrow@2x.png"; sourceTree = "<group>"; };
 		954930E51B3DB3D4004C62A8 /* leftarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftarrow@2x.png"; sourceTree = "<group>"; };
+		959264AC1B46EAE200E168D2 /* PlanoPreenchidoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanoPreenchidoViewController.swift; sourceTree = "<group>"; };
 		95AA57911B4307A900767121 /* ReflectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectionsViewController.swift; sourceTree = "<group>"; };
 		95AA57931B431ED700767121 /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		95AA57951B431EE200767121 /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				95AA57991B444DB700767121 /* SettingsTableViewCell.swift */,
 				9507E2291B446994000EB782 /* ResourcesTableViewCell.swift */,
 				9934FFAE1B41D9250061678F /* ProblemaPreenchido.swift */,
+				959264AC1B46EAE200E168D2 /* PlanoPreenchidoViewController.swift */,
 				954930DC1B3CDD3D004C62A8 /* ViewController.swift */,
 				95F9C0B91B39C3F8006358F4 /* InitialViewController.swift */,
 				95AA57911B4307A900767121 /* ReflectionsViewController.swift */,
@@ -529,6 +532,7 @@
 				9507E22A1B446994000EB782 /* ResourcesTableViewCell.swift in Sources */,
 				95AA579A1B444DB700767121 /* SettingsTableViewCell.swift in Sources */,
 				95F9C0B51B39C3F8006358F4 /* AppDelegate.swift in Sources */,
+				959264AD1B46EAE200E168D2 /* PlanoPreenchidoViewController.swift in Sources */,
 				999903D11B43235500F0BF28 /* ProsContrasViewController.swift in Sources */,
 				954930D31B3CD738004C62A8 /* BWWalkthroughPageViewController.swift in Sources */,
 				999903E01B445B9E00F0BF28 /* Reflection.swift in Sources */,

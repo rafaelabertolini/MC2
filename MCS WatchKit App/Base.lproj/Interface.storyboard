@@ -12,7 +12,7 @@
                     <items>
                         <group width="1" height="41" alignment="left" id="a3z-wU-2Tw">
                             <items>
-                                <imageView width="27" height="27" alignment="left" verticalAlignment="center" image="balanca0" id="0q5-WY-u0x">
+                                <imageView width="40" height="40" alignment="center" verticalAlignment="center" image="balanca0" id="0q5-WY-u0x">
                                     <color key="tintColor" red="0.4830018552" green="0.7431409685" blue="0.72935433199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label width="38.5" height="42.5" alignment="center" verticalAlignment="center" text="MCS" id="Hpn-Vl-afy"/>

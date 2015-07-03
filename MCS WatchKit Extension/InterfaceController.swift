@@ -42,11 +42,8 @@ class InterfaceController: WKInterfaceController {
                 self.nomeLabel.setText(replyFromParent["replay"]as? String)
             }
             
-            
-            
         })
 
-        
     }
 
     override func didDeactivate() {
