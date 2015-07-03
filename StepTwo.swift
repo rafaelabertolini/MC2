@@ -9,6 +9,8 @@
 import Foundation
 import CoreData
 
+@objc(StepTwo)
+
 class StepTwo: NSManagedObject {
 
     @NSManaged var isUnlocked: NSNumber
