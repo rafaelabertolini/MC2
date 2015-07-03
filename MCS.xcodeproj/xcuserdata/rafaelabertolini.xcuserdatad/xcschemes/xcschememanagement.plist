@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MCS WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MCS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Notification - MCS WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>95F9C0C61B39C3F8006358F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>999904091B45C3A400F0BF28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
